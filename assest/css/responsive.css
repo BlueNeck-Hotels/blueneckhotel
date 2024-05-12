@@ -1,0 +1,285 @@
+@media (max-width: 1600px) {}
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 85%;
+    }
+
+ 
+
+    .guest-manage img {
+        width: 83%;
+    }
+
+    .guest-manage {
+        padding-top: 48px;
+    }
+
+    .blue-nack-img {
+        padding-top: 207px;
+        width: 100%;
+        margin-left: 47px;
+    }
+
+    .slider_bg {
+        height: 324px;
+        width: 100%;
+    }
+
+    .guest-manage img {
+        width: 67%;
+    }
+
+    /* .guest-manage {
+        padding-top: 94px;
+    } */
+
+    .blue-nack-img {
+        padding-top: 42px;
+        width: 100%;
+        margin-left: 47px;
+    }
+
+    .bg_banner {
+        height: 708px;
+        width: 100%;
+      
+    }
+
+}
+
+@media (max-width: 1200px) {
+  
+
+}
+
+@media (max-width: 1040px) {
+   
+    .msin-spin-logo {
+        margin-top: 312px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-border{
+        display: none !important;
+    }
+
+    .mobile-mode-form{
+        display: inherit;
+    }
+
+    .padding-top {
+        padding-top: 112px;
+    }
+
+    .msin-spin-logo {
+        margin-top: 108px !important;
+        padding-left: 118px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .h1_size {
+        font-size: 2.1875rem;
+    }
+
+    .msin-spin-logo {
+        margin-top: 91px !important;
+        padding-left: 7px !important;
+    }
+}   
+
+@media (max-width: 576px) {
+    i .h1_size {
+        font-size: 3.125rem;
+    }
+
+    .product_slider .slick-prev:before {
+        content: url("/assest/font/left-arrow.svg") !important;
+    }
+
+    .product_slider .slick-next:before {
+        content: url("/assest/font/right-arrow.svg") !important;
+    }
+
+    .product_slider .slick-next {
+        top: 28rem;
+    }
+
+    .vertical_padding {
+        padding-block: 77px;
+    }
+
+    .company_slide img {
+        display: block;
+        width: 65%;
+    }
+
+    .h2_font_size {
+        font-size: 2.0625rem;
+    }
+
+    .white_border {
+        padding: 12px 2px;
+    }
+
+    .categorey_slider .card_border {
+        background-color: white;
+        padding: 30px 10px;
+        width: 78%;
+        display: block;
+        margin: auto;
+    }
+
+    .product_slider .slick-next {
+        top: 27rem;
+        left: 22rem;
+    }
+
+    .product_slider .slick-prev {
+        top: 27rem;
+        left: 17rem !important;
+    }
+
+    .categorey_slider .slick-prev {
+        left: 4px !important;
+    }
+
+    .categorey_slider .slick-next {
+        right: 18px !important;
+    }
+
+    .testimonial_slider .slick-next {
+        top: 23rem;
+        right: 10rem;
+    }
+
+    .testimonial_slider .slick-prev {
+        top: 23rem;
+        right: 16rem;
+    }
+
+    .footer_padding {
+        padding-top: 58px;
+    }
+
+    .product_slider .slick-prev {
+        top: 28rem;
+        left: 16rem !important;
+    }
+
+    .product_slider .slick-next {
+        top: 28rem;
+        left: 23rem;
+    }
+
+    .testimonial_slider img {
+        width: 75%;
+        display: block !important;
+        margin: auto;
+        margin-top: 14px;
+    }
+
+    .mobile_contact{
+        display: none !important;
+    }
+
+}
+ @media (max-width: 480px) {
+    .h1_size {
+        font-size: 3.4375rem;
+    }
+
+    .company_slider img {
+        width: 48% !important;
+    }
+
+    .product_slider .slick-prev {
+        top: 34rem;
+        left: 15rem !important;
+    }
+
+    .product_slider .slick-next {
+        top: 34rem;
+        left: 21rem;
+    }
+
+    .testimonial_slider .slick-prev {
+        top: 22rem;
+        right: 18rem;
+    }
+
+    .testimonial_slider .slick-next {
+        top: 19rem;
+        right: 10rem;
+    }
+
+    .testimonial_slider .slick-next {
+        top: 22rem;
+        right: 12rem;
+    }
+}
+
+@media (max-width: 412px) {
+    .product_slider .slick-prev {
+        top: 32rem;
+        left: 12rem !important;
+    }
+
+    .product_slider .slick-next {
+        top: 32rem;
+        left: 18rem;
+    }
+
+    .testimonial_slider .slick-prev {
+        top: 23rem;
+        right: 15rem;
+    }
+
+    .testimonial_slider .slick-next {
+        top: 23rem;
+        right: 9rem;
+    }
+}
+
+@media (max-width: 391px) {
+    .h1_size {
+        font-size: 2.5rem;
+        margin-top: 122px;
+    }
+
+    .img_logo img {
+        width: 113px !important;
+        height: 44px !important;
+    }
+
+    .company_slide img {
+        display: block;
+        width: 75%;
+    }
+
+    .product_slider .slick-prev {
+        top: 31rem;
+        left: 11rem !important;
+    }
+
+    .product_slider .slick-next {
+        top: 31rem;
+        left: 16rem;
+    }
+
+    .testimonial_slider .slick-next {
+        top: 26rem;
+        right: 14rem;
+        transform: rotate(180deg);
+        margin-top: 20px
+    }
+
+    .testimonial_slider .slick-prev {
+        top: 26rem;
+        right: 8rem;
+        margin-top: 20px;
+        transform: rotate(180deg);
+    }
+}
