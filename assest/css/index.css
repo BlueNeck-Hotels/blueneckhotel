@@ -59,34 +59,39 @@
   background-image: url("../img/blue-nack-main-img-section.png");
   height:800px  ;
   width: 100%;
-  background-position: center;
+  background-position: center; 
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slider_bg{
-  background-image: url("../img/sliderblum.png");
-  height:442px  ;
+.slider_bg {
+  background-image: url(../img/sliderblum.png);
+  height: 400px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
 .padding-top{
   padding-top:330px;
 }
 
-.hastag{
-  margin-top: 363px;
+.hastag {
+  margin-top: 335px;
 }
 
-.guest-manage{
-  padding-top: 78px;
+.guest-manage {
+  padding-top: 47px;
 }
 
 .guest-manage img{
-  width:  77%;
+  width:  74%;
 }
 .side-big-logo img{
   position: absolute;
@@ -132,7 +137,7 @@
 }
 
 .product_bg{
-  background-color: #b3eeff;
+  background-color: #E6F8FE;
 }
 
 .servic-manage{
@@ -154,6 +159,13 @@
   width: 70px !important;
 }
 
+.mobile-design{
+  display: none !important;
+}
+
+.contact_btn{
+  border: 1px solid var(--main_color);
+}
 /* -----socal-media---------- */
 
 /* .floating-bar p,
@@ -253,10 +265,10 @@ span,
   
 }
 
-.blue-nack-img{
-  padding-top: 118px;
+.blue-nack-img {
+  padding-top: 61px;
   width: 100%;
-  margin-left: 47px;
+  margin-left: 56px;
 }
 
 /* @-webkit-keyframes logo_spin{
@@ -305,7 +317,19 @@ span,
   margin: auto;
 }
 
+.mobile-bg{
+  background-color:white;
+}
+.mobile-off{
+  display: none !important;
+}
 
+.product_slider {
+  margin: 0 -10px;
+}
+.product_slider .slick-slide {
+  margin: 0 10px;
+}
 
 .partner{
   border: none;
@@ -321,4 +345,238 @@ span,
   font-size: 30px !important;
   padding-top: 4px;
   padding-left: 4px;
+}
+
+.mobile-design .slick-dots {
+  bottom: 12px !important;  
+  
+}
+.product_slider .slick-dots {
+  bottom: 12px !important;  
+  
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: var(--yellow-color) !important;
+}
+
+.slick-dots li button:before{
+  font-size: 10px !important;
+}
+
+
+
+
+
+/* ==============hotel-listing===================== */
+
+.hotel-listing-top{
+  margin-top: 165px;
+}
+
+.card-bg{
+  background-color: #F5F5F5;
+  border-radius: 20px;
+}
+
+.text-blue{
+  color: blue !important;
+}
+
+.book-now{
+  background-color: var(--main_color);
+  border: 1px solid var(--main_color);
+  padding: 10px 29px;
+  border-radius: 5px;
+  color: white;
+  margin-top:65px;
+}
+
+.more-top{
+  padding-top:163px;
+}
+
+.hotel_img img{
+  width: 100%;
+}
+
+.price-top{
+  margin-top:42px;
+}
+
+.slide-containt p a{
+  padding-right:10px ;
+  margin-bottom: 20px !important;
+}
+
+/* .aminitiy-bottom{
+  padding-bottom: 20px;
+} */
+
+
+/* ==================hotel-details-page======================= */
+.room-reviews {
+  margin-top: 50px;
+}
+
+.room .section-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-title.sm h4 {
+  font-size: 50px;
+}
+
+.section-title p {
+  color: #c9c9c9;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.room-reviews .rating-details .review-summary {
+  text-align: center;
+  background-color: #ad498c;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  border-radius: 4px;
+}
+
+.room-reviews .rating-details .review-summary .average {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.room-reviews .rating-details .review-summary .rating i {
+  color: #fff;
+}
+
+.room-reviews .rating-details .progress-item {
+  margin-bottom: 5px;
+}
+
+.room-reviews .rating-details .progress {
+  height: 15px;
+  background: #efefef;
+  border-radius: 2px;
+}
+
+.room-reviews .rating-details .progress-bar {
+  background-color: #ad498c;
+}
+
+.room-reviews .rating-details .progress-item .progress-value {
+  font-size: 12px;
+  margin-top: -5px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.room-reviews .review-box {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 100px;
+  min-height: 100px;
+}
+
+.btn_1 {
+  border-radius: 3px;
+  border: 1px solid #04ad04 !important;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.room-reviews .review-contentt {
+  position: relative;
+  padding: 20px 30px;
+  border: 1px solid #efefef;
+  border-left-width: 8px;
+}
+
+.room-reviews .rating i.voted {
+  color: #ffb600;
+}
+
+.room-reviews .review-box {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 100px;
+  min-height: 100px;
+}
+
+.room-reviews .review-author {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.room-reviews .review-author img {
+  border-radius: 3px;
+}
+
+.room-reviews .review-author img {
+  width: 80px;
+  height: auto;
+}
+
+.room-reviews .review-info {
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* ====================hotel-listing=================== */
+
+.hotel-details-margine-top{
+  margin-top: 152px !important;
+}
+
+.hotel-details-margine-top img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.padding-bottom{
+  margin-bottom: 25px !important;
+}
+
+.rate-manage{
+  background-color: #E8F7F0;
+  color:#1EBC67;
+  padding: 8px 15px;
+  border-radius: 10px;
+  
+}
+
+.rate-hotels{
+  background-color: #EAF7F9;
+  color:#01BCF1;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.rate-buliding{
+  background-color: #FBEBF0;
+  color:#E4457F;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.rate-value{
+  background-color: #FBEEE8;
+  color:#D95A25;
+  padding: 8px 15px;
+  border-radius: 10px;
 }

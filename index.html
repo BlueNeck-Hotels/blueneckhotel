@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="title" content="What is Air Handling Unit">
-  <meta name="theme-color" content="#FF8C00">
+  <meta name="theme-color" content="#FFD603">
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="stylesheet" href="./assest/css/global.css" />
@@ -22,12 +22,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 </head>
 
 <body>
   <!--------------------header--------------------->
   <header>
-    <div class="container-fluid py-3" id="navbar">
+    <div class="container-fluid py-2 py-md-3 py-lg-3" id="navbar">
       <!-- <div class="py-1 ps-0  pe-md-4 px-lg-5 d-flex align-items-center mobile_contact">
         <img src="./assest/font/Calling.svg" alt="logo" class="img-fluid pe-2" />
         <a href="tel:8447977781">Call : 8447977781</a>
@@ -35,11 +36,11 @@
         <a href="mailto:Info.ggenterprises01@gmail.com">Info.ggenterprises01@gmail.com</a>
       </div> -->
       <div class="container">
-        <div class="row">
-          <div class="col-2">
-            <img src="./assest/font/full-main-logo.svg" alt="main-logo" class="img-fluid">
+        <div class="row overflow-x-hidden">
+          <div class="col-4 col-md-3 col-lg-2">
+            <img src="./assest/font/full-main-logo.svg" alt="main-logo" class="img-fluid main-logo ">
           </div>
-          <div class="col-9">
+          <div class="col-6 col-md-7 col-lg-8">
             <div class="row align-items-center main-border p-2  px-2">
               <div class="col-4">
                 <div class="border-right px-2">
@@ -79,23 +80,57 @@
               </div>
             </div>
           </div>
-          <div class="col-1 hambardar">
-            <img src="./assest/font/hambargar.svg" alt="hambargar-img" class="img-fluid">
+          <div class="col-2 col-md-2 col-lg-2 hambardar">
+            <img src="./assest/font/hambargar.svg" alt="hambargar-img" class="img-fluid menu-bar">
           </div>
         </div>
       </div>
+    
+     <!-- -----------mobile-nav-------------  -->
+ <div class="main-mobile-bg">
+  <div class="color">
+    <div class="row pt-3 overflow-x-hidden">
+      <div class="col-6 mobile_log ps-4">
+        <img src="./assest/font/main-logo.svg" alt="" class="d-flex">
+      </div>
+      <div class="col-6 mt-3">
+        <div class="float-end me-4">
+          <i class="bx bx-x crose"></i>
+        </div>
+      </div>
+      <div class="col-12 home-nav  is_font_18 font_f_libre">
+        <ul class="">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#footer">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  href="#about" class="nav-link" aria-current="page" >About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#footer">Features</a>
+          </li>
+        </ul>
+        <div class="font_size_18 ms-3">
+          <a href="#contact" class="contact_btn">Contact Us</a>
+        </div>
+      </div>
+      <div class="col-6 position-absolute bottom-0">
+        <img src="./assest/img/Blue nack-big-logo.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div> 
+ </div> 
     </div>
   </header>
   <!-------------------hero-section---------------->
   <section class="bg_banner" id="home">
     <div class="container">
       <div class="row">
-      
-        <div class="col-7 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6">
           <h1 class="font_size_47 h1_size text-white padding-top text-capitalize"><span class="yellow">planning travel
               </br>
               Click</span><span class="blue"> blue
-              <img src="./assest/font/fab-icon.svg" alt="maini_mashin" class="img-fluid" />
+              <img src="./assest/font/fab-icon.svg" alt="maini_mashin" class="img-fluid ms-5" />
             </span> </h1>
           <div class="row mashine_top">
             <div class="col-3 col-md-3 col-lg-3 ">
@@ -113,7 +148,7 @@
             </div> -->
           </div>
         </div>
-        <div class="col-5 col-md-6 col-lg-6  msin-spin-logo">
+        <div class="col-12 col-md-6 col-lg-6  msin-spin-logo">
           <img src="./assest/font/Blue-nack-fb-logo.svg" alt="" class="img-fluid opacity-50 logo_spin">
           <!-- <div class="float-sm floating-bar">
             <div class="fl-fl float-fb">
@@ -126,7 +161,7 @@
             <div class="fl-fl float-tw">
               <i class="fa fa-twitter"></i>
               <a href="" target="_blank">
-                <img src="./assest/font/call.svg" alt=""> <span class="text-white font_size_14 text-center">Call
+                 <img src="./assest/font/call.svg" alt=""> <span class="text-white font_size_14 text-center">Call
                   Now</span>
               </a>
             </div>
@@ -153,7 +188,7 @@
                 <input type="text" class="form-control py-3 px-3" placeholder="Recipient's username"
                   aria-label="Recipient's username" aria-describedby="basic-addon2">
               </div>
-          
+
             </div>
             <div class="d-flex align-items-center justify-content-between px-2">
               <div class="col-5 ">
@@ -186,21 +221,21 @@
 
   <!----------------company---------------->
 
-  <section class="slider_bg">
+  <!-- <section class="slider_bg">
     <div class="container margine_bottom">
       <div class="row">
-        <div class="col-4">
+        <div class="col-4 col-md-4 col-lg-4">
           <p class="font_size_45 yellow  hastag">#iamabluetraveller</p>
         </div>
-        <div class="col-4 guest-manage">
+        <div class="col-4 col-md-4 col-lg-4 guest-manage">
           <img src="./assest/img/blue-nack-gust-img.png" alt="blue-nack-gust-img.png" class="img-fluid">
         </div>
-        <div class="col-4">
+        <div class="col-4 col-md-4 col-lg-4">
           <img src="./assest/img/your-delight-our-experitises.png" alt="blue-nack-img" class="img-fluid blue-nack-img">
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!----------------HOTEL------------------->
@@ -210,23 +245,63 @@
       <img src="./assest/img/Blue nack-big-logo.png" alt="">
     </div>
     <div class="container">
-      <div class="row">
-        <div class=" col-6 second-heading">
-          <h2 class="font_size_40  blue text-capitalize font_weight_700">blue neck across Gurugram</h2>
+      <div class="row overflow-x-hidden">
+        <div class=" col-12 col-md-6 col-lg-6 second-heading">
+          <h2 class="font_size_40 h2-size text-capitalize font_weight_700 blue">blue neck across Gurugram</h2>
           <p class="font_size_18">We are the chain of Corporate hotels serving modern age business professionals.
             We focus on providing marvelous experience to our guest through our unmatched services.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row product_slider overflow-hidden">
         <div class="col-4 py-5">
           <div class="card-border p-3">
             <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
-            <div class="card-body py-4">
+            <div class="card-body py-2 pt-4">
+              <h5 class="card-title font_weight_700 ">Blue neck hotel</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
+                <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                </span>
+              </p>
+              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 py-5">
+          <div class="card-border p-3">
+            <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
+            <div class="card-body py-2 pt-4">
               <h5 class="card-title font_weight_700">Blue neck hotel</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
               <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
-                <span class="float-end"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
+                </span>
+              </p>
+              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 py-5">
+          <div class="card-border p-3">
+            <img src="./assest/img/hotel-images.png " class="img-fluid hotel-images-room" alt="hotel-images">
+            <div class="card-body py-2 pt-4">
+              <h5 class="card-title  font_weight_700 ">Blue neck hotel</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <p class="font_size_22 "><span class=""><strong>₹30,425</strong> Night</span>
+                <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -241,30 +316,11 @@
           <div class="card-border p-3">
             <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
             <div class="card-body py-4">
-              <h5 class="card-title font_weight_700">Blue neck hotel</h5>
+              <h5 class="card-title font_weight_700 fon">Blue neck hotel</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
-              <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
-                <span class="float-end"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                </span>
-              </p>
-              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 py-5">
-          <div class="card-border p-3">
-            <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
-            <div class="card-body py-4">
-              <h5 class="card-title font_weight_700">Blue neck hotel</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
-                <span class="float-end"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
+              <p class="font_size_22 "><span class=""><strong>₹30,425</strong> Night</span>
+                <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -283,15 +339,17 @@
   <section class="product_bg vertical_padding ">
     <div class="container">
       <div class="row ">
-        <div class=" col-6 second-heading">
-          <h2 class="font_size_40  blue text-capitalize font_weight_700">What makes us blue neck?</h2>
+        <div class=" col-12 col-md-8 col-lg-6 second-heading">
+          <h2 class="font_size_40 h2-size blue text-capitalize font_weight_700">What makes us blue neck?</h2>
           <p class="font_size_18 py-3">We are the chain of Corporate hotels serving modern age business professionals.
             We focus on providing marvelous experience to our guest through our unmatched services.</p>
         </div>
       </div>
+
+      <!-- -----------desktop------------- -->
       <div class="row img-manage-us g-3">
-        <div class="col-7 position-relative">
-          <img src="./assest/img/hotel-respection-images.png" alt="hotel-respection-images" class="img-fluid">
+        <div class="col-7 col-md-6 col-lg-7 position-relative">
+          <img src="./assest/img/hotel-respection-images.png" alt="hotel-respection-images" class="img-fluid big-img">
           <div class="hotel-contant ">
             <h3 class="font_size_30">tech with heart</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -299,7 +357,7 @@
               Ut enim ad minim veniam, quis nostrud exercitation</p>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-5 col-md-6 col-lg-5">
           <div class="row g-3">
             <div class="col-12 position-relative">
               <img src="./assest/img/automated-cleanliness-images.png" alt="">
@@ -323,6 +381,46 @@
           </div>
         </div>
       </div>
+
+      <!-- -----------mobile------------- -->
+
+      <div class="row img-manage-us mobile-design g-3 overflow-x-hidden">
+
+        <div class="col-4 py-5 px-2">
+          <div class="p-3 card-border">
+            <img src="./assest/img/hotel-respection-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
+            <div class="card-body py-4">
+              <h3 class="font_size_30 text-capitalize">tech with heart</h3>
+              <p class="card-text"> Like a best friend you can always trust & rely on, we're there for you every step of
+                your stay helping you bloom to your best.</p>
+              </p>
+            </div>
+          </div>
+        </div>`
+        <div class="col-4 py-5 px-2">
+          <div class="p-3 card-border">
+            <img src="./assest/img/automated-cleanliness-images.png" class="img-fluid hotel-images-room"
+              alt="hotel-images">
+            <div class="card-body py-4">
+              <h3 class="font_size_30 text-capitalize">automated</h3>
+              <p class="card-text"> Like a best friend you can always trust & rely on, we're there for you every step of
+                your stay helping you bloom to your best.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 py-5 px-2">
+          <div class="p-3 card-border">
+            <img src="./assest/img/sleep-tech-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
+            <div class="card-body py-4">
+              <h3 class="font_size_30 text-capitalize">sleep tech</h3>
+              <p class="card-text"> Like a best friend you can always trust & rely on, we're there for you every step of
+                your stay helping you bloom to your best.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <div class="see-what">
@@ -330,22 +428,24 @@
   </div>
 
   <!-- -----------------------------gallery-------------------------- -->
-  <!-- <section class="vertical_padding">
+  <section class="vertical_padding">
     <div class="container">
-      <div class="row gallery-images-size">
-        <div class="col-6">
-          <div class="row g-4">
+      <div class="row gallery-images-size gallery overflow-x-hidden">
+        <div class="col-12 col-md-12 col-lg-6 mx-2">
+          <div class="row g-4 mx-2">
             <div class="col-12">
               <img src="./assest/img/blue-nack-gallert-image.png" alt="blue-nack-gallert-image" class="img-fluid">
             </div>
             <div class="col-6">
               <div class="row g-4">
                 <div class="col-12">
-                  <div class="come-blue-neck">
+                  <div class="">
+                    <img src="./assest/img/gallery-blue-come-layer.png" alt="" class="img-fluid">
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="come-blue-yellow">
+                  <div class="">
+                    <img src="./assest/img/gallery-yellow-layer-second.png" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -355,12 +455,13 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-12 col-lg-6 mx-2">
           <div class="row g-4">
             <div class="col-6">
               <div class="row g-4">
                 <div class="col-12">
-                  <div class="come-blue-neck_1">
+                  <div class="">
+                    <img src="./assest/img/gallery-yellow-layer.png" alt="" class="img-fluid">
                   </div>
                 </div>
                 <div class="col-12">
@@ -372,33 +473,37 @@
               <img src="./assest/img/best-hotel-images.png" alt="blue-nack-gallert-cake" class="img-fluid">
             </div>
           </div>
-          <div class="col-6 mt-4">
-            <div class="light-blue"></div>
+          <div class="col-12 mt-4">
+            <div class="">
+              <img src="./assest/img/gallery-blue-layer.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
+        
+
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- ---------------------owner----------------------  -->
 
   <section class="product_bg vertical_padding ">
     <div class="container">
       <div class="row ">
-        <div class="col-4  ">
+        <div class="col-4">
           <div class="mx-1 bg-white pt-3">
             <img src="./assest/img/Blue-nack-owner.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">patron & partners</h4>
             <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem
               reprehenderit soluta corrupti nihil consequuntur </p>
-              <div class="text-color">
-                <a class="d-flex justify-content-center align-items-center">partner with us
-                  <i class='bx bx-right-arrow-alt'></i>
-                </a>
-              </div>
+            <div class="text-color">
+              <a class="d-flex justify-content-center align-items-center">partner with us
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-4  ">
+        <div class="col-4">
           <div class="mx-1 bg-white pt-3">
             <img src="./assest/img/Corporate Bookings.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">Corporate Bookings</h4>
@@ -411,19 +516,62 @@
             </div>
           </div>
         </div>
-        <div class="col-4  ">
+        <div class="col-4">
           <div class="mx-1 bg-white pt-4">
             <img src="./assest/img/Careers @ blue neck.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">Careers @ blue neck</h4>
             <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem
               reprehenderit soluta corrupti nihil consequuntur </p>
-              <div class="text-color">
-                <a class="d-flex justify-content-center align-items-center">partner with us
-                  <i class='bx bx-right-arrow-alt'></i>
-                </a>
-              </div>
+            <div class="text-color">
+              <a class="d-flex justify-content-center align-items-center">partner with us
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="row g-4 ">
+        <div class="col-12 mobile-off">
+          <div class=" mobile-bg d-flex">
+            <div class="col-4">
+              <img src="./assest/img/Blue-nack-owner.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-8 px-2">
+              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2">patron & partners</h4>
+              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+            </div>
+            <div class="mx-1  pt-3">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mobile-off">
+          <div class=" mobile-bg d-flex">
+            <div class="col-4">
+              <img src="./assest/img/Corporate Bookings.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-8 px-2">
+              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2">patron & partners</h4>
+              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+            </div>
+            <div class="mx-1  pt-3">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mobile-off ">
+          <div class=" mobile-bg d-flex">
+            <div class="col-4">
+              <img src="./assest/img/Careers @ blue neck.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-8 px-2">
+              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2 ">patron & partners</h4>
+              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+            </div>
+            <div class="mx-1  pt-3">
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -479,7 +627,8 @@
               <ul>
                 <li><a href="">Address</a></li>
                 <li><a href=""> <span class="blue">Ph.</span>:-011-XXXXXXX</a></li>
-                <li><a href=""> <span class="blue"><img src="./assest/font/footer-mail-section.svg" alt="">www.gmail.com</span></a></li>
+                <li><a href=""> <span class="blue"><img src="./assest/font/footer-mail-section.svg"
+                        alt="">www.gmail.com</span></a></li>
               </ul>
             </div>
           </div>
@@ -503,9 +652,133 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="./assest/js/slick.js"></script>
   <script src="./assest/js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.product_slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed in milliseconds
+        dots: true,
+
+        dots: true,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024, // If screen wid2158/*/67uyth is 1024px or less
+            settings: {
+              slidesToShow: 3, // Show 3 slides
+              slidesToScroll: 3, // Scroll 3 slides
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 768, // If screen width is 768px or less
+            settings: {
+              slidesToShow: 2, // Show 2 slides
+              slidesToScroll: 2 // Scroll 2 slides
+            }
+          },
+          {
+            breakpoint: 480, // If screen width is 480px or less
+            settings: {
+              slidesToShow: 1, // Show 1 slide
+              slidesToScroll: 1 // Scroll 1 slide
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.mobile-design').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 1,
+        speed: 1000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        arrows: true,
+        dots: true,
+        focusOnSelect: false,
+        cssEase: 'linear',
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px'
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.gallery').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1,
+        speed: 13000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        arrows: false,
+        dots: false,
+        focusOnSelect: false,
+        cssEase: 'linear',
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px'
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+<script type="text/javascript">
+  $(function() {
+  
+    $('input[name="datefilter"]').daterangepicker({
+        autoUpdateInput: false,
+        locale: {
+            cancelLabel: 'Clear'
+        }
+    });
+  
+    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+    });
+  
+    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+    });
+  
+  });
+  </script>
 </body>
 
 </html>

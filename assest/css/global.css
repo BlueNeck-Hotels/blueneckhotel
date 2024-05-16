@@ -23,6 +23,8 @@
 
 body {
   font-family: var(--font_f_popping) !important;
+
+  overflow-x: hidden !important;
 }
 
 a {
@@ -119,18 +121,26 @@ li {
 
 /* -----------mobile-nav------------ */
 
-.mobile-nav {
+.main-mobile-bg{
+  background-color: #000;
+  height: 100vh;
+  z-index:999;
   position: fixed;
-  width: 100% !important;
-  height: 100%;
-  z-index:9999;
+  top: 0;
+}
+
+ .color {
+  position: fixed;
+  width: 75% !important;
+  height: 100vh;
+  z-index:99;
   left: -150%;
   top: 0;
-  background-color: #CFE8EF;
+  background-color:white ;
   color: black;
   transition: 1s ease-in-out;
+} 
 
-}
 
 .toggle {
   left:0px ;
@@ -153,6 +163,11 @@ li {
   transition: .5s;
   font-size: 40px !important;
 }
+
+.crose{
+  font-size: 35px;
+}
+
 .mobile-nav i {
   font-size: 37px;
 }
@@ -177,10 +192,13 @@ li {
 }
 .home-nav ul {
   padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .home-nav ul li {
-  padding: 15px 10px;
+  padding: -1px 10px;
   list-style: none;
 }
 
@@ -204,7 +222,7 @@ li {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 9999;
 }
 
 #navbar a {

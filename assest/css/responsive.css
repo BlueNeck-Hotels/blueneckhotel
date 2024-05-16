@@ -1,285 +1,297 @@
 @media (max-width: 1600px) {}
 
 @media (max-width: 1400px) {
-    html {
-        font-size: 85%;
-    }
+  html {
+    font-size: 85%;
+  }
 
- 
+  .guest-manage img {
+    width: 83%;
+  }
 
-    .guest-manage img {
-        width: 83%;
-    }
+  .guest-manage {
+    padding-top: 48px;
+  }
 
-    .guest-manage {
-        padding-top: 48px;
-    }
+  .blue-nack-img {
+    padding-top: 207px;
+    width: 100%;
+    margin-left: 47px;
+  }
 
-    .blue-nack-img {
-        padding-top: 207px;
-        width: 100%;
-        margin-left: 47px;
-    }
+  .slider_bg {
+    height: 324px;
+    width: 100%;
+  }
 
-    .slider_bg {
-        height: 324px;
-        width: 100%;
-    }
+  .guest-manage img {
+    width: 67%;
+  }
 
-    .guest-manage img {
-        width: 67%;
-    }
+  .blue-nack-img {
+    padding-top: 31px;
+    width: 100%;
+    margin-left: 47px;
+  }
 
-    /* .guest-manage {
-        padding-top: 94px;
-    } */
+  .bg_banner {
+    height: 708px;
+    width: 100%;
+  }
 
-    .blue-nack-img {
-        padding-top: 42px;
-        width: 100%;
-        margin-left: 47px;
-    }
-
-    .bg_banner {
-        height: 708px;
-        width: 100%;
-      
-    }
-
+  .hastag {
+    margin-top: 263px;
+  }
+  .form-control {
+    padding: 8px 22px 0 0 !important;
+}
 }
 
 @media (max-width: 1200px) {
-  
+  .slider_bg {
+    height: 279px;
+    width: 100%;
+  }
 
+  .hastag {
+    margin-top: 229px;
+  }
+
+  .light-blue {
+    width: 565px;
+    height: 358px;
+  }
+
+  .book-now {
+    margin-top: 30px;
+  }
+
+  .price-top {
+    margin-top: 20px;
+  }
+
+  .hotel_img img {
+    width: 100%;
+    aspect-ratio: 3 / 2.3;
+  }
+
+  .more-top {
+    padding-top: 133px;
+}
 }
 
 @media (max-width: 1040px) {
-   
-    .msin-spin-logo {
-        margin-top: 312px !important;
-    }
+  .msin-spin-logo {
+    margin-top: 305px !important;
+  }
+
+  .blue-nack-img {
+    padding-top: 32px;
+  }
 }
 
 @media (max-width: 991px) {
-    .main-border{
-        display: none !important;
-    }
+  .main-border {
+    display: none !important;
+  }
 
-    .mobile-mode-form{
-        display: inherit;
-    }
+  .mobile-mode-form {
+    display: inherit;
+  }
 
-    .padding-top {
-        padding-top: 112px;
-    }
+  .guest-manage img {
+    width: 78%;
+    margin-left: 26px;
+  }
 
-    .msin-spin-logo {
-        margin-top: 108px !important;
-        padding-left: 118px !important;
-    }
+  .padding-top {
+    padding-top: 112px;
+  }
+
+  .msin-spin-logo {
+    margin-top: 108px !important;
+    padding-left: 118px !important;
+  }
+
+  .blue-nack-img {
+    padding-top: 65px;
+    width: 100%;
+    margin-left: 60px;
+  }
+
+  .slider_bg {
+    height: 245px;
+    width: 100%;
+  }
+
+  .hastag {
+    margin-top: 192px;
+    font-size: 28px;
+  }
+
+  .bg_banner {
+    margin-top: 80px;
+  }
+
+  .img-manage-us {
+    display: none !important;
+  }
+
+  .mobile-design {
+    display: inherit !important;
+  }
+
+  .bg-white {
+    display: none;
+  }
+
+  .mobile-bg {
+    border-radius: 20px;
+    padding: 9px;
+  }
+
+  .mobile-off {
+    display: inherit !important;
+  }
+
+  .main-logo {
+    width: 100px;
+  }
+
+  .hotel_img img {
+    width: 100%;
+    aspect-ratio: 5 / 2.8;
+  }
+
+  .slide-containt {
+    padding-top: 18px;
+  }
+
+  .hotel-listing-top {
+    margin-top: 120px;
+  }
+
+  
 }
 
 @media (max-width: 768px) {
-    .h1_size {
-        font-size: 2.1875rem;
-    }
+  .h1_size {
+    font-size: 2.1875rem;
+  }
 
-    .msin-spin-logo {
-        margin-top: 91px !important;
-        padding-left: 7px !important;
-    }
-}   
+  .mobile-mode-form {
+    display: inherit;
+    position: absolute;
+    width: 76%;
+    z-index: 999;
+    margin-top: 32px;
+  }
+
+  .msin-spin-logo {
+    margin-top: 91px !important;
+    padding-left: 7px !important;
+    position: absolute;
+    z-index: 999;
+    width: 424px !important;
+  }
+
+  .bg_banner {
+    margin-top: 50px;
+  }
+
+  .main-logo {
+    width: 90px;
+  }
+}
 
 @media (max-width: 576px) {
-    i .h1_size {
-        font-size: 3.125rem;
-    }
+  .mobile-mode-form {
+    display: inherit;
+    position: absolute;
+    width: 94%;
+    z-index: 999;
+    margin-top: 31px;
+  }
 
-    .product_slider .slick-prev:before {
-        content: url("/assest/font/left-arrow.svg") !important;
-    }
+  .msin-spin-logo {
+    margin-top: 93px !important;
+    width: 40% !important;
+    margin-left: 282px;
+  }
 
-    .product_slider .slick-next:before {
-        content: url("/assest/font/right-arrow.svg") !important;
-    }
+  .yellow {
+    font-size: 32px;
+  }
 
-    .product_slider .slick-next {
-        top: 28rem;
-    }
+  .bg_banner {
+    background-image: url("../img/mobile\ BG.jpg");
+    height: 724px;
+    width: 100%;
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    .vertical_padding {
-        padding-block: 77px;
-    }
+  .h2-size {
+    font-size: 1.75rem;
+  }
 
-    .company_slide img {
-        display: block;
-        width: 65%;
-    }
+  .vertical_padding {
+    padding-block: 50px;
+  }
 
-    .h2_font_size {
-        font-size: 2.0625rem;
-    }
+  .hambardar img {
+    width: 30px !important;
+  }
 
-    .white_border {
-        padding: 12px 2px;
-    }
+  .footer {
+    padding-top: 30px;
+  }
 
-    .categorey_slider .card_border {
-        background-color: white;
-        padding: 30px 10px;
-        width: 78%;
-        display: block;
-        margin: auto;
-    }
+  .mobile-img-logo {
+    width: 123px;
+  }
 
-    .product_slider .slick-next {
-        top: 27rem;
-        left: 22rem;
-    }
-
-    .product_slider .slick-prev {
-        top: 27rem;
-        left: 17rem !important;
-    }
-
-    .categorey_slider .slick-prev {
-        left: 4px !important;
-    }
-
-    .categorey_slider .slick-next {
-        right: 18px !important;
-    }
-
-    .testimonial_slider .slick-next {
-        top: 23rem;
-        right: 10rem;
-    }
-
-    .testimonial_slider .slick-prev {
-        top: 23rem;
-        right: 16rem;
-    }
-
-    .footer_padding {
-        padding-top: 58px;
-    }
-
-    .product_slider .slick-prev {
-        top: 28rem;
-        left: 16rem !important;
-    }
-
-    .product_slider .slick-next {
-        top: 28rem;
-        left: 23rem;
-    }
-
-    .testimonial_slider img {
-        width: 75%;
-        display: block !important;
-        margin: auto;
-        margin-top: 14px;
-    }
-
-    .mobile_contact{
-        display: none !important;
-    }
-
-}
- @media (max-width: 480px) {
-    .h1_size {
-        font-size: 3.4375rem;
-    }
-
-    .company_slider img {
-        width: 48% !important;
-    }
-
-    .product_slider .slick-prev {
-        top: 34rem;
-        left: 15rem !important;
-    }
-
-    .product_slider .slick-next {
-        top: 34rem;
-        left: 21rem;
-    }
-
-    .testimonial_slider .slick-prev {
-        top: 22rem;
-        right: 18rem;
-    }
-
-    .testimonial_slider .slick-next {
-        top: 19rem;
-        right: 10rem;
-    }
-
-    .testimonial_slider .slick-next {
-        top: 22rem;
-        right: 12rem;
-    }
+  .hotel-listing-top {
+    margin-top: 99px;
+  }
 }
 
-@media (max-width: 412px) {
-    .product_slider .slick-prev {
-        top: 32rem;
-        left: 12rem !important;
-    }
+@media (max-width: 480px) {
+  .msin-spin-logo {
+    margin-top: 130px !important;
+    width: 48% !important;
+    margin-left: 203px;
+  }
 
-    .product_slider .slick-next {
-        top: 32rem;
-        left: 18rem;
-    }
-
-    .testimonial_slider .slick-prev {
-        top: 23rem;
-        right: 15rem;
-    }
-
-    .testimonial_slider .slick-next {
-        top: 23rem;
-        right: 9rem;
-    }
+  .padding-top {
+    padding-top: 71px;
+  }
 }
+
+@media (max-width: 430px) {}
 
 @media (max-width: 391px) {
-    .h1_size {
-        font-size: 2.5rem;
-        margin-top: 122px;
-    }
+  .msin-spin-logo {
+    margin-top: 130px !important;
+    width: 59% !important;
+    margin-left: 56px;
+  }
 
-    .img_logo img {
-        width: 113px !important;
-        height: 44px !important;
-    }
+  .mobile-mode-form {
+    margin-top: 10px;
+  }
 
-    .company_slide img {
-        display: block;
-        width: 75%;
-    }
+  :root{
+    --font_size_25: 18px;
+    --font_size_30: 18px;
+  }
 
-    .product_slider .slick-prev {
-        top: 31rem;
-        left: 11rem !important;
-    }
+  .more-top {
+    padding-top: 99px;
+}
 
-    .product_slider .slick-next {
-        top: 31rem;
-        left: 16rem;
-    }
-
-    .testimonial_slider .slick-next {
-        top: 26rem;
-        right: 14rem;
-        transform: rotate(180deg);
-        margin-top: 20px
-    }
-
-    .testimonial_slider .slick-prev {
-        top: 26rem;
-        right: 8rem;
-        margin-top: 20px;
-        transform: rotate(180deg);
-    }
+.book-now {
+  padding: 13px 18px;
+}
 }
