@@ -589,4 +589,27 @@ span,
   float: inline-end;
 }
 
-.
+.navigation-bar{
+  padding-block: 60px;
+}
+
+.navigation-bar a{
+  margin-inline-end: 70px;
+  font-weight: 500;
+  font-size: var(--font_size_22);
+  transition: all 0.1s linear;
+}
+
+.navigation-bar a:hover{
+    color:var(--main_color) !important;
+    border-bottom: 3px solid  var(--main_color) ;   
+}
+
+.amenities-manage p  span{
+  margin-left: 15px !important;
+}
+
+.amenities-manage p {
+  padding-block: 5px;
+}
+
