@@ -22,13 +22,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css'>
 </head>
 
 <body>
   <!--------------------header--------------------->
   <header>
-    <div class="container-fluid py-2 py-md-3 py-lg-3" id="navbar">
+    <div class="container-fluid py-2 py-md-2 py-lg-2" id="navbar">
       <!-- <div class="py-1 ps-0  pe-md-4 px-lg-5 d-flex align-items-center mobile_contact">
         <img src="./assest/font/Calling.svg" alt="logo" class="img-fluid pe-2" />
         <a href="tel:8447977781">Call : 8447977781</a>
@@ -38,88 +39,95 @@
       <div class="container">
         <div class="row overflow-x-hidden">
           <div class="col-4 col-md-3 col-lg-2">
-            <img src="./assest/font/full-main-logo.svg" alt="main-logo" class="img-fluid main-logo ">
-          </div>
-          <div class="col-6 col-md-7 col-lg-8">
-            <div class="row align-items-center main-border p-2  px-2">
-              <div class="col-4">
-                <div class="border-right px-2">
-                  <img src="./assest/font/hotel-img.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Where</span>
-                  <input type="text" class="form-control input-size" id="exampleInputEmail1"
-                    placeholder="Search destinations">
+            <a href="./index.html" >
+              <img  src="./assest/img/oregnal-logo.png" alt="main-logo" class="img-fluid main-logo " >
+            </a>       
+         </div>
+          <div class="col-6 col-md-8 col-lg-9">
+            <form name="myForm" action="./hotel-listing.php" id="form" >
+              <div class="row align-items-center main-border p-2 mt-3 px-2">
+                <div class="col-4">
+                  <div class="border-right px-2">
+                    <img src="./assest/font/hotel-img.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Where</span>
+                    <input type="text" class="form-control input-size ps-4" id="where"
+                      placeholder="Search destinations" required>
+                  </div>
                 </div>
-              </div>
-              <div class="col-2 p-0">
-                <div class="border-right">
-                  <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Check In</span>
-                  <input type="date" class="form-control input-size-check" id="exampleInputEmail1"
-                    placeholder="Add dates">
+                <div class="col-2 p-0">
+                  <div class="border-right">
+                    <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Check
+                      In</span>
+                    <div class="form-group">
+                      <input id="dp1" type="text" class="form-control ps-3" id="DtChkIn" placeholder="  Check-In" required>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-2 p-0 ps-2 ">
-                <div class="border-right">
-                  <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Check In</span>
-                  <input type="date" class="form-control input-size-check" id="exampleInputEmail1"
-                    placeholder="Add dates">
+                <div class="col-2 p-0 ps-2 ">
+                  <div class="border-right">
+                    <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Check
+                      In</span>
+                    <div class="form-group">
+                      <input id="dp2" type="text" required class="form-control ps-4" id="DtChkOut" placeholder="  Check-Out" required>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="col-2">
-                <div class="">
-                  <img src="./assest/font/who.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Who</span>
-                  <select class="form-select opition bg-transparent" aria-label="Default select example">
-                    <option selected> Add guest </option>
-                    <option value="1">1</option>
-                    <option value="2">2+</option>
-                  </select>
+                <div class="col-2">
+                  <div class="">
+                    <img src="./assest/font/who.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Who</span>
+                    <select  id="add-guest" class="form-select opition bg-transparent ps-4" aria-label="Default select example"   >
+                      <option selected> Add guest </option>
+                      <option value="1" >1</option>
+                      <option value="2">2+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-2 d-flex align-items-center justify-content-end">
+                  <button class="seacrh-button" type="submit" value="Submit">Search</button>
+                  </a>
                 </div>
               </div>
-              <div class="col-2 d-flex align-items-center justify-content-end">
-                <button class="seacrh-button">Search</button>
-              </div>
-            </div>
+            </form>
           </div>
-          <div class="col-2 col-md-2 col-lg-2 hambardar">
+          <div class="col-2 col-md-2 col-lg-1 hambardar">
             <img src="./assest/font/hambargar.svg" alt="hambargar-img" class="img-fluid menu-bar">
           </div>
         </div>
       </div>
-    
-     <!-- -----------mobile-nav-------------  -->
- <div class="main-mobile-bg">
-  <div class="color">
-    <div class="row pt-3 overflow-x-hidden">
-      <div class="col-6 mobile_log ps-4">
-        <img src="./assest/font/main-logo.svg" alt="" class="d-flex">
-      </div>
-      <div class="col-6 mt-3">
-        <div class="float-end me-4">
-          <i class="bx bx-x crose"></i>
+
+      <!-- -----------mobile-nav-------------  -->
+      <div class="color">
+        <div class="row pt-3 overflow-x-hidden">
+          <div class="col-6 mobile_log ps-4">
+            <img src="./assest/font/main-logo.svg" alt="" class="d-flex">
+          </div>
+          <div class="col-6 mt-3">
+            <div class="float-end me-4">
+              <i class="bx bx-x crose"></i>
+            </div>
+          </div>
+          <div class="col-12 home-nav  is_font_18 font_f_libre">
+            <ul class="">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" aria-current="page">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#footer">Features</a>
+              </li>
+            </ul>
+            <div class="font_size_18 ms-3">
+              <a href="#contact" class="contact_btn">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-6 position-absolute bottom-0">
+            <img src="./assest/img/Blue nack-big-logo.png" alt="" class="img-fluid">
+          </div>
         </div>
       </div>
-      <div class="col-12 home-nav  is_font_18 font_f_libre">
-        <ul class="">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#footer">Home</a>
-          </li>
-          <li class="nav-item">
-            <a  href="#about" class="nav-link" aria-current="page" >About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#footer">Features</a>
-          </li>
-        </ul>
-        <div class="font_size_18 ms-3">
-          <a href="#contact" class="contact_btn">Contact Us</a>
-        </div>
-      </div>
-      <div class="col-6 position-absolute bottom-0">
-        <img src="./assest/img/Blue nack-big-logo.png" alt="" class="img-fluid">
-      </div>
-    </div>
-  </div> 
- </div> 
     </div>
   </header>
   <!-------------------hero-section---------------->
@@ -150,7 +158,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-6  msin-spin-logo">
           <img src="./assest/font/Blue-nack-fb-logo.svg" alt="" class="img-fluid opacity-50 logo_spin">
-          <!-- <div class="float-sm floating-bar">
+          <div class="float-sm floating-bar">
             <div class="fl-fl float-fb">
               <i class="fa fa-facebook"></i>
               <a href="" target="_blank" class="">
@@ -161,7 +169,7 @@
             <div class="fl-fl float-tw">
               <i class="fa fa-twitter"></i>
               <a href="" target="_blank">
-                 <img src="./assest/font/call.svg" alt=""> <span class="text-white font_size_14 text-center">Call
+                <img src="./assest/font/call.svg" alt=""> <span class="text-white font_size_14 text-center">Call
                   Now</span>
               </a>
             </div>
@@ -178,7 +186,7 @@
               </a>
             </div>
 
-          </div> -->
+          </div>
         </div>
         <form action="">
           <div class="mobile-mode-form p-3 rounded-4">
@@ -221,21 +229,31 @@
 
   <!----------------company---------------->
 
-  <!-- <section class="slider_bg">
+  <section class="slider_bg">
     <div class="container margine_bottom">
       <div class="row">
-        <div class="col-4 col-md-4 col-lg-4">
+        <div class="col-2 col-md-2 col-lg-4">
           <p class="font_size_45 yellow  hastag">#iamabluetraveller</p>
         </div>
         <div class="col-4 col-md-4 col-lg-4 guest-manage">
           <img src="./assest/img/blue-nack-gust-img.png" alt="blue-nack-gust-img.png" class="img-fluid">
         </div>
-        <div class="col-4 col-md-4 col-lg-4">
+        <div class="col-6 col-md-6 col-lg-4">
           <img src="./assest/img/your-delight-our-experitises.png" alt="blue-nack-img" class="img-fluid blue-nack-img">
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
+
+  </div>
+
+  <section class="mobile-slider">
+      
+        <div class="mobile-slider">
+          <img src="./assest/img/mobile-slider.png" alt="">
+          <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+    </div>
+  </section>
 
 
   <!----------------HOTEL------------------->
@@ -246,21 +264,23 @@
     </div>
     <div class="container">
       <div class="row overflow-x-hidden">
-        <div class=" col-12 col-md-6 col-lg-6 second-heading">
-          <h2 class="font_size_40 h2-size text-capitalize font_weight_700 blue">blue neck across Gurugram</h2>
-          <p class="font_size_18">We are the chain of Corporate hotels serving modern age business professionals.
-            We focus on providing marvelous experience to our guest through our unmatched services.</p>
+        <div class=" col-12 col-md-10 col-lg-6 second-heading">
+          <h2 class="font_size_40 h2-size text-capitalize font_weight_700 blue">our essence</h2>
+          <p class="font_size_18">Blue Neck Hotels is a chain of Entry Level Three Star Hotel/Boutique Hotels spread
+            across the cyber city Gurugram.
+            Our main focus is on providing Standardize Service with Marvelous Experience to our guests by providing
+            unmatched services..</p>
         </div>
       </div>
       <div class="row product_slider overflow-hidden">
         <div class="col-4 py-5">
           <div class="card-border p-3">
-            <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
+            <img src="./assest/img/blue-neck-sectot-40-hotel.png" class="img-fluid hotel-images-room"
+              alt="hotel-images">
             <div class="card-body py-2 pt-4">
-              <h5 class="card-title font_weight_700 ">Blue neck hotel</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
+              <h5 class="card-title font_weight_700 ">Blue Neck Sector 40  </h5>
+              <p class="card-text">This hotel is located near Unitech Cyber Park & Unitech Business Tower, Gurugram.</p>
+              <p class="font_size_22"><span class=""><strong>₹30,425</strong>/per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -277,10 +297,10 @@
           <div class="card-border p-3">
             <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
             <div class="card-body py-2 pt-4">
-              <h5 class="card-title font_weight_700">Blue neck hotel</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <p class="font_size_22"><span class=""><strong>₹30,425</strong> Night</span>
+              <h5 class="card-title font_weight_700">Blue Neck Sector41  </h5>
+              <p class="card-text">This hotel is located in South City 1 near Millennium City Centre metro station ,
+                Gurugram.</p>
+              <p class="font_size_22"><span class=""><strong>₹30,425</strong> /per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -295,31 +315,13 @@
 
         <div class="col-4 py-5">
           <div class="card-border p-3">
-            <img src="./assest/img/hotel-images.png " class="img-fluid hotel-images-room" alt="hotel-images">
+            <img src="./assest/img/blue-neck-sectot-47-hotel.png " class="img-fluid hotel-images-room"
+              alt="hotel-images">
             <div class="card-body py-2 pt-4">
-              <h5 class="card-title  font_weight_700 ">Blue neck hotel</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <p class="font_size_22 "><span class=""><strong>₹30,425</strong> Night</span>
-                <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                  <img src="./assest/font/hotel-star-ranking.svg" alt="">
-                </span>
-              </p>
-              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 py-5">
-          <div class="card-border p-3">
-            <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
-            <div class="card-body py-4">
-              <h5 class="card-title font_weight_700 fon">Blue neck hotel</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <p class="font_size_22 "><span class=""><strong>₹30,425</strong> Night</span>
+              <h5 class="card-title  font_weight_700 ">Blue Neck Sector 47  </h5>
+              <p class="card-text">This hotel is located near Subhash Chowk. Rooms are well equipped with Wi Fi
+                connection , LCD TV..</p>
+              <p class="font_size_22 "><span class=""><strong>₹30,425</strong> /per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -479,7 +481,7 @@
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </div>
@@ -580,7 +582,7 @@
 
 
 
-  <section class=" footer product_bg ">
+  <!-- <section class=" footer product_bg ">
     <div class="container ">
       <div class="row align-items-start footer-padding">
         <div class="col-12  col-md-12 col-lg-3 ">
@@ -642,27 +644,112 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
+
+  <section>
+    <footer class="footer-section">
+      <div class="container">
+          
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                  <div class="col-xl-4 col-lg-4 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img src="./assest/font/main-logo.svg" class="img-fluid" alt="logo"></a>
+                          </div>
+                          <div class="footer-text">
+                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                              elit,Lorem ipsum dolor sit amet.</p>
+                          </div>
+                      
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Useful Links</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">about</a></li>
+                              <li><a href="#">services</a></li>
+                              <li><a href="#">portfolio</a></li>
+                              <li><a href="#">Contact</a></li>
+                              <li><a href="#">About us</a></li>
+                              <li><a href="#">Our Services</a></li>
+                              <li><a href="#">Expert Team</a></li>
+                              <li><a href="#">Contact us</a></li>
+                              <li><a href="#">Latest News</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Subscribe</h3>
+                          </div>
+                          <div class="footer-text mb-25">
+                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                          </div>
+                          <!-- <div class="subscribe-form">
+                              <form action="#">
+                                  <input type="text" placeholder="Email Address">
+                                  <button><i class="fab fa-telegram-plane"></i></button>
+                              </form>
+                          </div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright-area">
+        <hr>
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2018, All Right Reserved <a href="#"></a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="./privacy.html">Privacy</a></li>
+                              <!-- <li><a href="#">Policy</a></li>
+                              <li><a href="#">Contact</a></li> -->
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
   <script src="./assest/js/slick.js"></script>
   <script src="./assest/js/script.js"></script>
+
   <script>
     $(document).ready(function () {
       $('.product_slider').slick({
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true, // Enable autoplay
         autoplaySpeed: 2000, // Set autoplay speed in milliseconds
@@ -698,6 +785,7 @@
     });
   </script>
   <script>
+
     $(document).ready(function () {
       $('.mobile-design').slick({
         slidesToShow: 1,
@@ -759,26 +847,6 @@
     });
   </script>
 
-<script type="text/javascript">
-  $(function() {
-  
-    $('input[name="datefilter"]').daterangepicker({
-        autoUpdateInput: false,
-        locale: {
-            cancelLabel: 'Clear'
-        }
-    });
-  
-    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-    });
-  
-    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-    });
-  
-  });
-  </script>
 </body>
 
 </html>

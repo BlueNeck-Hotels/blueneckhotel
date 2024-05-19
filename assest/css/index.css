@@ -24,8 +24,9 @@
 .main-border{
   border-radius: 50px;
   border: 1px solid #E0E0E0;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin-top: 11px !important ;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 5px !important ;
   padding-block: 14px;
 }
 
@@ -66,7 +67,7 @@
 
 .slider_bg {
   background-image: url(../img/sliderblum.png);
-  height: 400px;
+  height: 360px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,15 +84,15 @@
 }
 
 .hastag {
-  margin-top: 335px;
+  margin-top: 293px;
 }
 
 .guest-manage {
-  padding-top: 47px;
+  padding-top: 64px;
 }
 
 .guest-manage img{
-  width:  74%;
+  width:  62%;
 }
 .side-big-logo img{
   position: absolute;
@@ -153,6 +154,10 @@
   width: 60px !important;
   transition: all 0.2s linear;
   
+}
+
+.mobile-slider{
+  display: none;
 }
 
 .servic-manage img:hover{
@@ -266,7 +271,7 @@ span,
 }
 
 .blue-nack-img {
-  padding-top: 61px;
+  padding-top: 53px;
   width: 100%;
   margin-left: 56px;
 }
@@ -365,9 +370,27 @@ span,
   font-size: 10px !important;
 }
 
+input {
+  padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  border-radius: 0 !important;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  font-size: 12x;
+}
+
+.clickable { cursor: pointer; }
 
 
-
+.form-group input{
+  border: none;
+  box-shadow: none;
+}
 
 /* ==============hotel-listing===================== */
 
@@ -382,7 +405,10 @@ span,
 
 .text-blue{
   color: blue !important;
+  border: none;
 }
+
+#more {display: none;}
 
 .book-now{
   background-color: var(--main_color);
@@ -598,11 +624,13 @@ span,
   font-weight: 500;
   font-size: var(--font_size_22);
   transition: all 0.1s linear;
+  border-bottom: 2px solid  white ;   
+
 }
 
 .navigation-bar a:hover{
     color:var(--main_color) !important;
-    border-bottom: 3px solid  var(--main_color) ;   
+    border-bottom: 2px solid  var(--main_color) ;   
 }
 
 .amenities-manage p  span{
@@ -612,4 +640,38 @@ span,
 .amenities-manage p {
   padding-block: 5px;
 }
+
+.phots-slider{
+  padding-left: 28px !important;
+  font-size: 15px;
+}
+
+.phots-slider span{
+  padding: 7px 10px;
+}
+
+.phots-slider span:hover{
+  background-color: white;
+  border-radius: 15px;
+  color: var(--main_color);
+}
+
+.phots-slider .slick-dots {
+  bottom: 12px !important
+}
+
+ .slick-dots li.slick-active button:before{
+  color: var(--main_color) !important;
+}
+
+.map-manage iframe{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+
+
+/* ==============privay================================== */
 
