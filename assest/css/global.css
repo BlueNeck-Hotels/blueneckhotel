@@ -33,7 +33,7 @@ a {
 }
 
 ul {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
 }
 
@@ -198,12 +198,12 @@ li {
 }
 
 .home-nav ul li {
-  padding: -1px 10px;
+  padding: 0px 10px;
   list-style: none;
 }
 
 .home-nav ul li a {
-  font-weight: 550;
+  font-weight: 500;
   color: #000 !important;
   font-size: 17px;
   text-decoration: underline !important;
@@ -231,8 +231,9 @@ li {
   text-align: center;
   text-decoration: none !important;
   font-size: 1.125rem; 
-  line-height: 25px;
+  line-height: 50px;
   border-radius: 4px;
+  padding-left: 10px;
 }
 
 #navbar #logo {
@@ -397,11 +398,10 @@ left: 0;
 bottom: -15px;
 height: 2px;
 width: 50px;
-background: #ff5e14;
+background: var(--main_color);
 }
 .footer-widget ul li {
 display: inline-block;
-float: left;
 width: 50%;
 margin-bottom: 12px;
 }

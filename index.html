@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css'>
 </head>
@@ -37,20 +38,20 @@
         <a href="mailto:Info.ggenterprises01@gmail.com">Info.ggenterprises01@gmail.com</a>
       </div> -->
       <div class="container">
-        <div class="row overflow-x-hidden">
-          <div class="col-4 col-md-3 col-lg-2">
-            <a href="./index.html" >
-              <img  src="./assest/img/oregnal-logo.png" alt="main-logo" class="img-fluid main-logo " >
-            </a>       
-         </div>
+        <div class="row overflow-x-hidden py-2">
+          <div class="col-4 col-md-2 col-lg-2">
+            <a href="./index.html">
+              <img src="./assest/img/oregnal-logo.png" alt="main-logo" class="img-fluid main-logo ">
+            </a>
+          </div>
           <div class="col-6 col-md-8 col-lg-9">
-            <form name="myForm" action="./hotel-listing.php" id="form" >
-              <div class="row align-items-center main-border p-2 mt-3 px-2">
+            <form name="myForm" action="./hotel-listing.php" id="form">
+              <div class="row align-items-center main-border p-2  px-2">
                 <div class="col-4">
                   <div class="border-right px-2">
                     <img src="./assest/font/hotel-img.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Where</span>
-                    <input type="text" class="form-control input-size ps-4" id="where"
-                      placeholder="Search destinations" required>
+                    <input type="text" class="form-control input-size ps-4" id="where" placeholder="Search destinations"
+                      required>
                   </div>
                 </div>
                 <div class="col-2 p-0">
@@ -58,7 +59,8 @@
                     <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Check
                       In</span>
                     <div class="form-group">
-                      <input id="dp1" type="text" class="form-control ps-3" id="DtChkIn" placeholder="  Check-In" required>
+                      <input id="dp1" type="text" class="form-control ps-3" id="DtChkIn" 
+                        required>
                     </div>
                   </div>
                 </div>
@@ -68,7 +70,8 @@
                     <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Check
                       In</span>
                     <div class="form-group">
-                      <input id="dp2" type="text" required class="form-control ps-4" id="DtChkOut" placeholder="  Check-Out" required>
+                      <input id="dp2" type="text" required class="form-control ps-4" id="DtChkOut"
+                        required>
                     </div>
                   </div>
                 </div>
@@ -76,9 +79,10 @@
                 <div class="col-2">
                   <div class="">
                     <img src="./assest/font/who.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Who</span>
-                    <select  id="add-guest" class="form-select opition bg-transparent ps-4" aria-label="Default select example"   >
-                      <option selected> Add guest </option>
-                      <option value="1" >1</option>
+                    <select id="add-guest" class="form-select opition bg-transparent ps-4"
+                      aria-label="Default select example">
+                      <option selected>  </option>
+                      <option value="1">1</option>
                       <option value="2">2+</option>
                     </select>
                   </div>
@@ -138,7 +142,7 @@
           <h1 class="font_size_47 h1_size text-white padding-top text-capitalize"><span class="yellow">planning travel
               </br>
               Click</span><span class="blue"> blue
-              <img src="./assest/font/fab-icon.svg" alt="maini_mashin" class="img-fluid ms-5" />
+              <img src="./assest/font/fab-icon.svg" alt="maini_mashin" class="img-fluid " />
             </span> </h1>
           <div class="row mashine_top">
             <div class="col-3 col-md-3 col-lg-3 ">
@@ -161,22 +165,22 @@
           <div class="float-sm floating-bar">
             <div class="fl-fl float-fb">
               <i class="fa fa-facebook"></i>
-              <a href="" target="_blank" class="">
+              <a href="//api.whatsapp.com/send?phone=9319097977" target="_blank" class="">
                 <img src="./assest/font/whatsapp.svg" alt=""> <span
                   class="text-white font_size_14 text-center">whatsapp</span>
               </a>
             </div>
             <div class="fl-fl float-tw">
               <i class="fa fa-twitter"></i>
-              <a href="" target="_blank">
+              <a href="tel:9319097977" target="_blank">
                 <img src="./assest/font/call.svg" alt=""> <span class="text-white font_size_14 text-center">Call
                   Now</span>
               </a>
             </div>
             <div class="fl-fl float-gp">
               <i class="fa fa-google-plus"></i>
-              <a href="" target="_blank"> <img src="./assest/font/mail.svg" alt=""> <span
-                  class="text-white font_size_14 text-center">Mail Us</span>
+              <a href="mailto:enquiry@blueneckhotels.com" target="_blank"> <img src="./assest/font/mail.svg" alt="">
+                <span class="text-white font_size_14 text-center">Mail Us</span>
               </a>
             </div>
             <div class="fl-fl float-rs">
@@ -229,29 +233,51 @@
 
   <!----------------company---------------->
 
-  <section class="slider_bg">
-    <div class="container margine_bottom">
-      <div class="row">
-        <div class="col-2 col-md-2 col-lg-4">
-          <p class="font_size_45 yellow  hastag">#iamabluetraveller</p>
+  <section>
+    <div class="hostag-slider desktop-view">
+      <div class="slider_bg">
+        <div class="container margine_bottom">
+          <div class="row">
+            <div class="col-2 col-md-2 col-lg-4">
+              <p class="font_size_45 yellow  hastag">#iamabluetraveller</p>
+            </div>
+            <div class="col-4 col-md-4 col-lg-4 guest-manage">
+              <img src="./assest/img/blue-nack-gust-img.png" alt="blue-nack-gust-img.png" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-6 col-lg-4">
+              <img src="./assest/img/your-delight-our-experitises.png" alt="blue-nack-img"
+                class="img-fluid blue-nack-img">
+            </div>
+          </div>
         </div>
-        <div class="col-4 col-md-4 col-lg-4 guest-manage">
-          <img src="./assest/img/blue-nack-gust-img.png" alt="blue-nack-gust-img.png" class="img-fluid">
+      </div>
+      <div class="slider_bg">
+        <div>
+          <img src="./assest/img/home-slider-second-hastag.png" alt="" class="img-fluid">
         </div>
-        <div class="col-6 col-md-6 col-lg-4">
-          <img src="./assest/img/your-delight-our-experitises.png" alt="blue-nack-img" class="img-fluid blue-nack-img">
+      </div>
+      <div class="slider_bg">
+        <div>
+          <img src="./assest/img/home-slider-third-hastag.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
   </section>
 
-  </div>
-
   <section class="mobile-slider">
-      
-        <div class="mobile-slider">
-          <img src="./assest/img/mobile-slider.png" alt="">
-          <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+    <div class="raper hostag-slider ove">
+      <div class="mobile-slider">
+        <img src="./assest/img/mobile-slider.png" alt="">
+        <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+      </div>
+      <div class="mobile-slider">
+        <img src="./assest/img/mobile-slider.png" alt="">
+        <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+      </div>
+      <div class="mobile-slider">
+        <img src="./assest/img/mobile-slider.png" alt="">
+        <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+      </div>
     </div>
   </section>
 
@@ -279,7 +305,7 @@
               alt="hotel-images">
             <div class="card-body py-2 pt-4">
               <h5 class="card-title font_weight_700 ">Blue Neck Sector 40  </h5>
-              <p class="card-text">This hotel is located near Unitech Cyber Park & Unitech Business Tower, Gurugram.</p>
+              <p class="card-text pt-3">This hotel is located near Unitech Cyber Park & Unitech Business Tower, Gurugram.</p>
               <p class="font_size_22"><span class=""><strong>₹30,425</strong>/per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -288,7 +314,8 @@
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                 </span>
               </p>
-              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+              <a href="./hotel-details-page.html"><button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+              </a>
             </div>
           </div>
         </div>
@@ -298,7 +325,7 @@
             <img src="./assest/img/hotel-images.png" class="img-fluid hotel-images-room" alt="hotel-images">
             <div class="card-body py-2 pt-4">
               <h5 class="card-title font_weight_700">Blue Neck Sector41  </h5>
-              <p class="card-text">This hotel is located in South City 1 near Millennium City Centre metro station ,
+              <p class="card-text pt-3">This hotel is located in South City 1 near Millennium City Centre metro station ,
                 Gurugram.</p>
               <p class="font_size_22"><span class=""><strong>₹30,425</strong> /per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -308,7 +335,7 @@
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                 </span>
               </p>
-              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+              <a href="./hotel-details-second.html"><button class="w-100 book-btn py-2 font_size_18">Book Now</button></a>
             </div>
           </div>
         </div>
@@ -319,8 +346,7 @@
               alt="hotel-images">
             <div class="card-body py-2 pt-4">
               <h5 class="card-title  font_weight_700 ">Blue Neck Sector 47  </h5>
-              <p class="card-text">This hotel is located near Subhash Chowk. Rooms are well equipped with Wi Fi
-                connection , LCD TV..</p>
+              <p class="card-text pt-3">This hotel is located near Subhash Chowk. Rooms are well equipped with Wi Fi , LCD TV..</p>
               <p class="font_size_22 "><span class=""><strong>₹30,425</strong> /per Night</span>
                 <span class="float-end d-flex mt-2"> <img src="./assest/font/hotel-star-ranking.svg" alt="">
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
@@ -329,7 +355,8 @@
                   <img src="./assest/font/hotel-star-ranking.svg" alt="">
                 </span>
               </p>
-              <button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+              <a href="./hotel-details-third.html"><button class="w-100 book-btn py-2 font_size_18">Book Now</button>
+              </a>
             </div>
           </div>
         </div>
@@ -343,8 +370,8 @@
       <div class="row ">
         <div class=" col-12 col-md-8 col-lg-6 second-heading">
           <h2 class="font_size_40 h2-size blue text-capitalize font_weight_700">What makes us blue neck?</h2>
-          <p class="font_size_18 py-3">We are the chain of Corporate hotels serving modern age business professionals.
-            We focus on providing marvelous experience to our guest through our unmatched services.</p>
+          <p class="font_size_18 py-3">We are tech friendly hotel. We have automatized everything from cleaning process
+            to bed to enhance your level of comfort.</p>
         </div>
       </div>
 
@@ -496,10 +523,10 @@
           <div class="mx-1 bg-white pt-3">
             <img src="./assest/img/Blue-nack-owner.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">patron & partners</h4>
-            <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem
-              reprehenderit soluta corrupti nihil consequuntur </p>
-            <div class="text-color">
-              <a class="d-flex justify-content-center align-items-center">partner with us
+            <p class="text-center pt-4 px-2">We are one of the best mid-scale budget hotels across Gurugram. We assure
+              you that with every deal you make with us you will get great benefits. </p>
+            <div class="text-color pt-4">
+              <a class="d-flex justify-content-center align-items-center">Let’s grow together
                 <i class='bx bx-right-arrow-alt'></i>
               </a>
             </div>
@@ -509,10 +536,10 @@
           <div class="mx-1 bg-white pt-3">
             <img src="./assest/img/Corporate Bookings.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">Corporate Bookings</h4>
-            <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem
-              reprehenderit soluta corrupti nihil consequuntur </p>
-            <div class="text-color">
-              <a class="d-flex justify-content-center align-items-center">partner with us
+            <p class="text-center py-4  px-2">We are always interested and open to collaborate with Corporate and
+              travel agents. Let’s get connected and work together. </p>
+            <div class="text-color ">
+              <a class="d-flex justify-content-center align-items-center">Collaborate with us
                 <i class='bx bx-right-arrow-alt'></i>
               </a>
             </div>
@@ -522,10 +549,10 @@
           <div class="mx-1 bg-white pt-4">
             <img src="./assest/img/Careers @ blue neck.png" alt="" class="img-fluid">
             <h4 class="text-center font_size_25 text-capitalize opacity-75 pt-4">Careers @ blue neck</h4>
-            <p class="text-center py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem
-              reprehenderit soluta corrupti nihil consequuntur </p>
+            <p class="text-center py-3 px-2">BlueNeck is always in search of young talents and ready to work with the
+              ones who want to dedicate their time and energy for the growth of this hotel group. </p>
             <div class="text-color">
-              <a class="d-flex justify-content-center align-items-center">partner with us
+              <a class="d-flex justify-content-center align-items-center ">partner with us
                 <i class='bx bx-right-arrow-alt'></i>
               </a>
             </div>
@@ -541,7 +568,8 @@
             </div>
             <div class="col-8 px-2">
               <h4 class=" font_size_25 text-capitalize opacity-75 pt-2">patron & partners</h4>
-              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+              <p class=" py-3">We are one of the best mid-scale budget hotels across Gurugram. We assure you that with
+                every deal you make with us you will get great benefits.</p>
             </div>
             <div class="mx-1  pt-3">
             </div>
@@ -553,8 +581,9 @@
               <img src="./assest/img/Corporate Bookings.png" alt="" class="img-fluid">
             </div>
             <div class="col-8 px-2">
-              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2">patron & partners</h4>
-              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2">Corporate Bookings</h4>
+              <p class=" py-3">We are always interested and open to collaborate with Corporate and travel agents. Let’s
+                get connected and work together. </p>
             </div>
             <div class="mx-1  pt-3">
             </div>
@@ -566,11 +595,12 @@
               <img src="./assest/img/Careers @ blue neck.png" alt="" class="img-fluid">
             </div>
             <div class="col-8 px-2">
-              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2 ">patron & partners</h4>
-              <p class=" py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem quidem </p>
+              <h4 class=" font_size_25 text-capitalize opacity-75 pt-2 ">Careers @ blue neck</h4>
+              <p class=" py-3">BlueNeck is always in search of young talents and ready to work with the ones who want to
+                dedicate their time and energy for the growth of this hotel group </p>
             </div>
-            <div class="mx-1  pt-3">
-            </div>
+            <!-- <div class="mx-1  pt-3">
+            </div> -->
           </div>
         </div>
 
@@ -650,83 +680,66 @@
   <section>
     <footer class="footer-section">
       <div class="container">
-          
-          <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-lg-4 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-logo">
-                              <a href="index.html"><img src="./assest/font/main-logo.svg" class="img-fluid" alt="logo"></a>
-                          </div>
-                          <div class="footer-text">
-                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                              elit,Lorem ipsum dolor sit amet.</p>
-                          </div>
-                      
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Useful Links</h3>
-                          </div>
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">about</a></li>
-                              <li><a href="#">services</a></li>
-                              <li><a href="#">portfolio</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Our Services</a></li>
-                              <li><a href="#">Expert Team</a></li>
-                              <li><a href="#">Contact us</a></li>
-                              <li><a href="#">Latest News</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Subscribe</h3>
-                          </div>
-                          <div class="footer-text mb-25">
-                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                          </div>
-                          <!-- <div class="subscribe-form">
-                              <form action="#">
-                                  <input type="text" placeholder="Email Address">
-                                  <button><i class="fab fa-telegram-plane"></i></button>
-                              </form>
-                          </div> -->
-                      </div>
-                  </div>
+        <div class="footer-content pt-5 pb-3">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="./assest/font/main-logo.svg" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="footer-text">
+                  <p>A modern age group of hotels operated by highly skilled professionals..</p>
+                </div>
+
               </div>
-          </div>
-      </div>
-      <div class="copyright-area">
-        <hr>
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <div class="copyright-text">
-                          <p>Copyright &copy; 2018, All Right Reserved <a href="#"></a></p>
-                      </div>
-                  </div>
-                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                      <div class="footer-menu">
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="./privacy.html">Privacy</a></li>
-                              <!-- <li><a href="#">Policy</a></li>
-                              <li><a href="#">Contact</a></li> -->
-                          </ul>
-                      </div>
-                  </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>company</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+
+                  <li><a href="#">Contact</a></li>
+
+                </ul>
               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>services</h3>
+                </div>
+                <ul>
+                  <li><a href="#">pateon & partners</a></li>
+                  <li><a href="#">corporate bookings</a></li>
+                  <li><a href="#">careers @ blueNeck</a></li>
+                  <li><a href="#">expert team</a></li>
+                  <li><a href="#">latest news</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <hr>
+            <div class="col-12 col-md-12 col-lg-6 ">
+              <a href="./privacy.html" class="pe-4 ">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6 pt-4 pt-md-4 py-lg-0">
+              <p>COPYRIGHT 2021 blue neck HOTELS AND RESORTS. ALL RIGHT RESERVED
+              </p>
+            </div>
           </div>
+        </div>
       </div>
-  </footer>
+      <!-- <hr>
+       <div class="col-6">
+       </div> -->
+      </div>
+    </footer>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -847,6 +860,18 @@
     });
   </script>
 
+  <script>
+    $(document).ready(function () {
+      $('.hostag-slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 2000, // Set autoplay speed in milliseconds
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -8,14 +8,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assest/css/global.css" />
   <link rel="stylesheet" href="./assest/css/index.css" />
   <link rel="stylesheet" href="./assest/css/responsive.css" />
 </head>
 
-<body>
-  <header>
+<body >
+  <header >
     <div class="container-fluid py-2 py-md-2 py-lg-2" id="navbar">
       <!-- <div class="py-1 ps-0  pe-md-4 px-lg-5 d-flex align-items-center mobile_contact">
         <img src="./assest/font/Calling.svg" alt="logo" class="img-fluid pe-2" />
@@ -24,21 +26,20 @@
         <a href="mailto:Info.ggenterprises01@gmail.com">Info.ggenterprises01@gmail.com</a>
       </div> -->
       <div class="container">
-        <div class="row overflow-x-hidden ">
-          <div class="col-4 col-md-3 col-lg-2">
-            <!-- <img  src="./assest/font/full-main-logo.svg" alt="main-logo" class="img-fluid main-logo " > -->
-            <a href="./index.html" >
-              <img  src="./assest/font/main-logo.svg" alt="main-logo" class="img-fluid main-logo " >
+        <div class="row overflow-x-hidden py-2">
+          <div class="col-4 col-md-2 col-lg-2">
+            <a href="./index.html">
+              <img src="./assest/img/oregnal-logo.png" alt="main-logo" class="img-fluid main-logo ">
             </a>
           </div>
           <div class="col-6 col-md-8 col-lg-9">
-            <form name="myForm" action="./hotel-listing.php" id="form" >
-              <div class="row align-items-center main-border p-2 mt-3 px-2">
+            <form name="myForm" action="./hotel-listing.php" id="form">
+              <div class="row align-items-center main-border p-2  px-2">
                 <div class="col-4">
                   <div class="border-right px-2">
                     <img src="./assest/font/hotel-img.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Where</span>
-                    <input type="text" class="form-control input-size ps-4" id="where"
-                      placeholder="Search destinations" required>
+                    <input type="text" class="form-control input-size ps-4" id="where" placeholder="Search destinations"
+                      required>
                   </div>
                 </div>
                 <div class="col-2 p-0">
@@ -46,7 +47,8 @@
                     <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Check
                       In</span>
                     <div class="form-group">
-                      <input id="dp1" type="text" class="form-control ps-3" id="DtChkIn" placeholder="  Check-In" required>
+                      <input id="dp1" type="text" class="form-control ps-3" id="DtChkIn" 
+                        required>
                     </div>
                   </div>
                 </div>
@@ -56,7 +58,8 @@
                     <img src="./assest/font/check-logo.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Check
                       In</span>
                     <div class="form-group">
-                      <input id="dp2" type="text" required class="form-control ps-4" id="DtChkOut" placeholder="  Check-Out" required>
+                      <input id="dp2" type="text" required class="form-control ps-4" id="DtChkOut"
+                        required>
                     </div>
                   </div>
                 </div>
@@ -64,9 +67,10 @@
                 <div class="col-2">
                   <div class="">
                     <img src="./assest/font/who.svg" alt="hotel-img" class="img-fluid pe-1 "> <span>Who</span>
-                    <select  id="add-guest" class="form-select opition bg-transparent ps-4" aria-label="Default select example"   >
-                      <option selected> Add guest </option>
-                      <option value="1" >1</option>
+                    <select id="add-guest" class="form-select opition bg-transparent ps-4"
+                      aria-label="Default select example">
+                      <option selected>  </option>
+                      <option value="1">1</option>
                       <option value="2">2+</option>
                     </select>
                   </div>
@@ -86,7 +90,7 @@
 
       <!-- -----------mobile-nav-------------  -->
       <div class="color">
-        <div class="row pt-3 overflow-x-hidden justify-content-between">
+        <div class="row pt-3 overflow-x-hidden">
           <div class="col-6 mobile_log ps-4">
             <img src="./assest/font/main-logo.svg" alt="" class="d-flex">
           </div>
@@ -119,19 +123,22 @@
     </div>
   </header>
 
-  <main>
+  <main class="bg-logo-animation">
     <section class="vertical-padding ">
       <div class="container hotel-listing-top">
         <div class="row box_shadwo my-2 p-4  card-bg ">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img position-relative">
-            <img src="./assest/img/hotel-listing-img.png" alt="" class="img-fluid " />
-            <p class="position-absolute bottom-0 ">20%off</p>
+          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img hostag-slider">
+            <img src="./assest/img/BlueNeck-Hotel-Unitech-Cyber-Park.png" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-neck-sec-41-food-area.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-neck-sec-41-reception-front.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/sitting-area.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-nack-sec-41-superior 2.jpg" alt="" class="img-fluid " />
           </div>
           <div class="col-12 col-md-12 col-lg-6 col-xl-4">
             <div class="row slide-containt">
               <div class="col-7">
-                <h1 class="font_size_25 font_weight_700">Blue neck hotels
-                  in Gurugram</h1>
+                <h1 class="font_size_25 font_weight_700">BlueNeck Hotel
+                  Unitech Cyber Park</h1>
                 <div class="pt-4">
                   <p><a href=""><img src="./assest/font/map.svg" alt="" class="aminitiy-bottom"></a>Gurugram</p>
                   <p><a href=""><img src="./assest/font/swimming.svg" alt="" class="aminitiy-bottom"></a>Swimming</p>
@@ -156,22 +163,25 @@
                   <button onclick="myFunction()" id="myBtn" class="text-blue">more+</button>
                 </div>
                 <p class="pt-4"><a href=""><img src="./assest/font/people.svg" alt=""></a>3 Guests Max</p>
-                <a href="./hotel-details-page.html"><button class="book-now ">Book Now</button>
+                <a href="./hotel-details-page.html"><button class="book-now ">View Details</button>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="row box_shadwo my-2 p-4  card-bg ">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img position-relative">
-            <img src="./assest/img/hotel-listing-img.png" alt="" class="img-fluid " />
-            <p class="position-absolute bottom-0 ">20%off</p>
+          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img hostag-slider ">
+            <img src="./assest/img/BlueNeck-Hotel-IKEA-GMP.png" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-necl-sec-44.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-nack-evevnt-sec-44.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-neck-sec-44.jpg" alt="" class="img-fluid " />
+            
           </div>
           <div class="col-12 col-md-12 col-lg-6 col-xl-4">
             <div class="row slide-containt">
               <div class="col-7">
-                <h1 class="font_size_25 font_weight_700">Blue neck hotels
-                  in Gurugram</h1>
+                <h1 class="font_size_25 font_weight_700">BlueNeck Hotel
+                  IKEA GMP</h1>
                 <div class="pt-4">
                   <p><a href=""><img src="./assest/font/map.svg" alt="" class="aminitiy-bottom"></a>Gurugram</p>
                   <p><a href=""><img src="./assest/font/swimming.svg" alt="" class="aminitiy-bottom"></a>Swimming</p>
@@ -196,22 +206,25 @@
                   <button onclick="myFunction()" id="myBtn" class="text-blue">more+</button>
                 </div>
                 <p class="pt-4"><a href=""><img src="./assest/font/people.svg" alt=""></a>3 Guests Max</p>
-                <a href="./hotel-details-page.html"><button class="book-now ">Book Now</button>
+                <a href="./hotel-details-second.html"><button class="book-now ">View Details</button>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="row box_shadwo my-2 p-4  card-bg ">
-          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img position-relative">
-            <img src="./assest/img/hotel-listing-img.png" alt="" class="img-fluid " />
-            <p class="position-absolute bottom-0 ">20%off</p>
+          <div class="col-12 col-md-12 col-lg-6 col-xl-8  p-0 hotel_img hostag-slider ">
+            <img src="./assest/img/BlueNeck-Hotel-Millnium-City-Centre.png" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-nack-food-area.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-nack-hotel-ikea-gym-img.png.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/blue-nack-hotel-ikea-premium.jpg" alt="" class="img-fluid " />
+            <img src="./assest/img/bluenack-hote-Front-gate-image.jpg" alt="" class="img-fluid " />
           </div>
           <div class="col-12 col-md-12 col-lg-6 col-xl-4">
             <div class="row slide-containt">
               <div class="col-7">
-                <h1 class="font_size_25 font_weight_700">Blue neck hotels
-                  in Gurugram</h1>
+                <h1 class="font_size_25 font_weight_700">BlueNeck Hotel 
+                  Millnium City Centre</h1>
                 <div class="pt-4">
                   <p><a href=""><img src="./assest/font/map.svg" alt="" class="aminitiy-bottom"></a>Gurugram</p>
                   <p><a href=""><img src="./assest/font/swimming.svg" alt="" class="aminitiy-bottom"></a>Swimming</p>
@@ -236,7 +249,7 @@
                   <button onclick="myFunction()" id="myBtn" class="text-blue">more+</button>
                 </div>
                 <p class="pt-4"><a href=""><img src="./assest/font/people.svg" alt=""></a>3 Guests Max</p>
-                <a href="./hotel-details-page.html"><button class="book-now ">Book Now</button>
+                <a href="./hotel-details-third.html"><button class="book-now ">View Details</button>
                 </a>
               </div>
             </div>
@@ -246,94 +259,81 @@
       </div>
     </section>
 
-    
-  <section>
-    <footer class="footer-section">
-      <div class="container">
-          
-          <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                  <div class="col-xl-4 col-lg-4 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-logo">
-                              <a href="index.html"><img src="./assest/font/main-logo.svg" class="img-fluid" alt="logo"></a>
-                          </div>
-                          <div class="footer-text">
-                              <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                              elit,Lorem ipsum dolor sit amet.</p>
-                          </div>
-                      
-                      </div>
+
+    <section>
+      <footer class="footer-section">
+        <div class="container">
+          <div class="footer-content pt-5 pb-3">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a href="index.html"><img src="./assest/font/main-logo.svg" class="img-fluid" alt="logo"></a>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Useful Links</h3>
-                          </div>
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">about</a></li>
-                              <li><a href="#">services</a></li>
-                              <li><a href="#">portfolio</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Our Services</a></li>
-                              <li><a href="#">Expert Team</a></li>
-                              <li><a href="#">Contact us</a></li>
-                              <li><a href="#">Latest News</a></li>
-                          </ul>
-                      </div>
+                  <div class="footer-text">
+                    <p>A modern age group of hotels operated by highly skilled professionals..</p>
                   </div>
-                  <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                      <div class="footer-widget">
-                          <div class="footer-widget-heading">
-                              <h3>Subscribe</h3>
-                          </div>
-                          <div class="footer-text mb-25">
-                              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                          </div>
-                          <!-- <div class="subscribe-form">
-                              <form action="#">
-                                  <input type="text" placeholder="Email Address">
-                                  <button><i class="fab fa-telegram-plane"></i></button>
-                              </form>
-                          </div> -->
-                      </div>
-                  </div>
+
+                </div>
               </div>
-          </div>
-      </div>
-      <div class="copyright-area">
-        <hr>
-          <div class="container">
-              <div class="row">
-                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                      <div class="copyright-text">
-                          <p>Copyright &copy; 2018, All Right Reserved <a href="#"></a></p>
-                      </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>company</h3>
                   </div>
-                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                      <div class="footer-menu">
-                          <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Terms</a></li>
-                              <li><a href="./privacy.html">Privacy</a></li>
-                              <!-- <li><a href="#">Policy</a></li>
-                              <li><a href="#">Contact</a></li> -->
-                          </ul>
-                      </div>
-                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+
+                    <li><a href="#">Contact</a></li>
+
+                  </ul>
+                </div>
               </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>services</h3>
+                  </div>
+                  <ul>
+                    <li><a href="#">pateon & partners</a></li>
+                    <li><a href="#">corporate bookings</a></li>
+                    <li><a href="#">careers @ blueNeck</a></li>
+                    <li><a href="#">expert team</a></li>
+                    <li><a href="#">latest news</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <hr>
+              <div class="col-12 col-md-12 col-lg-6 ">
+                <a href="./privacy.html" class="pe-4 ">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+              </div>
+
+              <div class="col-12 col-md-12 col-lg-6 pt-4 pt-md-4 py-lg-0">
+                <p>COPYRIGHT 2021 blue neck HOTELS AND RESORTS. ALL RIGHT RESERVED
+                </p>
+              </div>
+            </div>
           </div>
-      </div>
-  </footer>
-  </section>
+        </div>
+        <!-- <hr>
+         <div class="col-6">
+         </div> -->
+        </div>
+      </footer>
+    </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="./assest/js/script.js"></script>
 
@@ -355,13 +355,27 @@
   </script>
 
 
-<script>
+  <!-- <script>
     // Add event listener to the button element
     document.getElementById("goToDetailsButton").addEventListener("click", function() {
         // Redirect to hotel-details.html when the button is clicked
         window.location.href = "hotel-details.html";
     });
-</script>
+</script> -->
+
+<script>
+    $(document).ready(function () {
+      $('.hostag-slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        arrows: true,
+        slidesToScroll: 1,
+        autoplay: false, // Enable autoplay
+        autoplaySpeed: 1500, // Set autoplay speed in milliseconds
+      });
+    });
+  </script>
 </body>
 
 </html>

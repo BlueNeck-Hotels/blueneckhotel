@@ -251,6 +251,30 @@
     left: 50%;
     transform: translate(-50%);
   }
+
+  .desktop-view{ 
+    display: none !important;
+  }
+
+  .slick-prev {
+    border: none !important;
+    color: white;
+    font-size: 0 !important;
+    position: absolute;
+    top: 126px;
+    left: 15px;
+    z-index: 9999;
+}
+
+.slick-next{
+  border: none !important;
+  color: white;
+  font-size: 0 !important;
+  position: absolute;
+  top: 126px;
+  right: 15px;
+}
+
 }
 
 @media (max-width: 576px) {
@@ -290,6 +314,11 @@
     background-size: cover;
   } */
 
+  .bg-logo-animation{
+    background-image: url("../img/blue-neck-add.png");
+    width: 100%;
+    height: 100vh;
+  }
 
   .h2-size {
     font-size: 1.5rem;
