@@ -86,7 +86,7 @@ li {
   font-size: var(--font_size_45);
 }
 
-.font_size_47 {
+.  {
   font-size: var(--font_size_47) !important;
 }
 
@@ -306,7 +306,6 @@ ul {
 .footer-section {
 background: #E6F8FE;
 position: relative;
-top: 80px;
 }
 .footer-cta {
 border-bottom: 1px solid #373636;

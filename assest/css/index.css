@@ -147,6 +147,7 @@
   position: fixed;
   left: 0;
   bottom: 75px;
+  z-index: 999;
 }
 
 .servic-manage img{
@@ -677,7 +678,7 @@ input {
 
 /* ==============privay================================== */
 
- .slick-next:before {
+ .bg-logo-animation .slick-next:before {
   content: ">"!important;
   background-color: transparent;
   border-radius: 0px;
@@ -685,7 +686,7 @@ input {
   font-size: 32px;
 }
 
- .slick-prev:before {
+ .bg-logo-animation .slick-prev:before {
   content: "<"!important;
   background-color: transparent;
   border-radius: 0px;
@@ -693,7 +694,7 @@ input {
   font-size: 32px;
 }
 
-.slick-next{
+ .slick-next{
   border: none !important;
   color: transparent;
   font-size: 0 !important;
@@ -714,7 +715,7 @@ input {
 
 /* ======================hotel=details========================= */
 
-
+/* 
 .demo-gallery > ul {
   margin-bottom: 0;
 }
@@ -828,11 +829,32 @@ input {
 }
 .home .demo-gallery {
   padding-bottom: 80px;
-}
+
 
 .bg-logo-animation{
   background-image: url("../img/blue-neck-add.png");
   width: 100%;
   height: 196vh;
   position: sticky;
+} */
+
+
+/* ======home-banner====== */
+.help-bannder-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-connect{
+  background-color: var(--yellow-color) !important;
+  color: var(--main_color);
+  border: 1px solid var(--yellow-color);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.h5-size{
+  font-size: 2.9375rem;
 }

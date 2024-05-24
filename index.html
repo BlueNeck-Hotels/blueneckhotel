@@ -29,15 +29,9 @@
 
 <body>
   <!--------------------header--------------------->
-  <header>
+<header>
     <div class="container-fluid py-2 py-md-2 py-lg-2" id="navbar">
-      <!-- <div class="py-1 ps-0  pe-md-4 px-lg-5 d-flex align-items-center mobile_contact">
-        <img src="./assest/font/Calling.svg" alt="logo" class="img-fluid pe-2" />
-        <a href="tel:8447977781">Call : 8447977781</a>
-        <img src="./assest/font/Message.svg" alt="logo" class="img-fluid ps-4 pe-2" />
-        <a href="mailto:Info.ggenterprises01@gmail.com">Info.ggenterprises01@gmail.com</a>
-      </div> -->
-      <div class="container">
+      <div class="container ">
         <div class="row overflow-x-hidden py-2">
           <div class="col-4 col-md-2 col-lg-2">
             <a href="./index.html">
@@ -50,8 +44,15 @@
                 <div class="col-4">
                   <div class="border-right px-2">
                     <img src="./assest/font/hotel-img.svg" alt="hotel-img" class="img-fluid pe-1"> <span>Where</span>
-                    <input type="text" class="form-control input-size ps-4" id="where" placeholder="Search destinations"
+                    <input type="text" list="browser" class="form-control input-size ps-4" id="where" placeholder="Search destinations"
                       required>
+                      <datalist id="browser">
+                        <option value="Delhi-NCR">
+                        <option value="gurugram">
+                        <option value="Bangalore">
+                        <option value="Ahmedabad">
+                        <option value="Mumbia">
+                      </datalist>
                   </div>
                 </div>
                 <div class="col-2 p-0">
@@ -101,7 +102,7 @@
       </div>
 
       <!-- -----------mobile-nav-------------  -->
-      <div class="color">
+ <div class="color">
         <div class="row pt-3 overflow-x-hidden">
           <div class="col-6 mobile_log ps-4">
             <img src="./assest/font/main-logo.svg" alt="" class="d-flex">
@@ -131,11 +132,11 @@
             <img src="./assest/img/Blue nack-big-logo.png" alt="" class="img-fluid">
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   </header>
   <!-------------------hero-section---------------->
-  <section class="bg_banner" id="home">
+ <section class="bg_banner" id="home">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
@@ -153,11 +154,13 @@
               We are the chain of Corporate hotels serving modern age business professionals. We focus on providing
               marvelous experience to our guest through our unmatched services.
             </p>
-            <!-- <div class="servic-manage ">
-              <img src="./assest/font/side-hotel.svg" alt="">
-              <img src="./assest/font/side-mariage.svg" alt="">
-              <img src="./assest/font/side-confernce.png" alt="">
-            </div> -->
+            <div class="servic-manage ">
+              <a href="./hotel-listing.html"><img src="./assest/font/side-hotel.svg"  alt=""></a>
+              <a href=""><img src="./assest/font/side-mariage.svg" alt="">
+              </a>
+              <a href=""><img src="./assest/font/side-confernce.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-6  msin-spin-logo">
@@ -229,12 +232,12 @@
         </form>
       </div>
     </div>
-  </section>
+  </section> 
 
   <!----------------company---------------->
 
-  <section>
-    <div class="hostag-slider desktop-view">
+ <section>
+    <div class="hostag-slider desktop-view overflow-x-hidden">
       <div class="slider_bg">
         <div class="container margine_bottom">
           <div class="row">
@@ -262,21 +265,21 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 
   <section class="mobile-slider">
-    <div class="raper hostag-slider ove">
+    <div class="raper hostag-slider overflow-x-hidden">
       <div class="mobile-slider">
         <img src="./assest/img/mobile-slider.png" alt="">
         <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
       </div>
       <div class="mobile-slider">
-        <img src="./assest/img/mobile-slider.png" alt="">
-        <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+        <img src="./assest/img/home-slider-mobile-second-hastag.png" alt="" class="img-fluid">
+        <p class="font_size_45 yellow  hastag-mobile-two">#iamabluehost</p>
       </div>
       <div class="mobile-slider">
-        <img src="./assest/img/mobile-slider.png" alt="">
-        <p class="font_size_45 yellow  hastag-mobile">#iamabluetraveller</p>
+        <img src="./assest/img/home-slider-mob-third-hastag.png" alt="" class="img-fluid">
+        <p class="font_size_45 yellow  hastag-mobile-three">#iamabluetravel</p>
       </div>
     </div>
   </section>
@@ -605,6 +608,20 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="help-banner position-relative">
+      <img src="./assest/img/need-banner.png" alt="" class="img-fluid">
+      <div class=" help-bannder-heading">
+          <h5 class=" h5-size yellow text-center">Need any Help?</h5>
+          <p class="font_size_18 text-center text-white py-1">Customer satisfaction is our topmost priority.
+            BlueNeck is the most reliable solution to your problems</p>
+            <div class="text-center">
+              <button class="py-2 py-md-2 py-lg-3 px-4 btn-connect font_size_18">Let’s connect</button>
+            </div>
+          </div>
     </div>
   </section>
 
