@@ -146,8 +146,9 @@
   flex-direction: column;
   position: fixed;
   left: 0;
-  bottom: 75px;
+  bottom: 10px;
   z-index: 999;
+  width: 100px !important;
 }
 
 .servic-manage img{
@@ -423,13 +424,16 @@ input {
 }
 
 .more-top{
-  padding-top:163px;
+  padding-top:73px;
 }
 
 .hotel_img img{
   width: 100%;
 }
 
+.more-top-second{
+  padding-top:51px;
+}
 .price-top{
   margin-top:42px;
 }
@@ -680,7 +684,6 @@ input {
 
  .bg-logo-animation .slick-next:before {
   content: ">"!important;
-  background-color: transparent;
   border-radius: 0px;
   color: #01BCF1 !important;
   font-size: 32px;
@@ -688,7 +691,6 @@ input {
 
  .bg-logo-animation .slick-prev:before {
   content: "<"!important;
-  background-color: transparent;
   border-radius: 0px;
   color: #01BCF1 !important;
   font-size: 32px;
@@ -701,16 +703,18 @@ input {
   position: absolute;
   top: 178px;
   right: 15px;
+  background-color: #827a7ac9;
 }
 
-.slick-prev{
+.slick-prev {
   border: none !important;
   color: transparent;
   font-size: 0 !important;
   position: absolute;
   top: 178px;
   left: 15px;
-  z-index: 9999;
+  z-index: 999;
+  background-color: #827a7ac9;
 }
 
 /* ======================hotel=details========================= */
@@ -829,14 +833,14 @@ input {
 }
 .home .demo-gallery {
   padding-bottom: 80px;
-
+*/ 
 
 .bg-logo-animation{
-  background-image: url("../img/blue-neck-add.png");
+background-image: url("../img/blue-neck-add.png") !important;
   width: 100%;
-  height: 196vh;
-  position: sticky;
-} */
+  height: 100%;
+  background-attachment: fixed;
+} 
 
 
 /* ======home-banner====== */
@@ -858,3 +862,9 @@ input {
 .h5-size{
   font-size: 2.9375rem;
 }
+
+.help-banner img{
+  width: 100%;
+}
+
+#more {display: none;}

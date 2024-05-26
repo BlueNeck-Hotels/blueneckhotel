@@ -182,7 +182,7 @@ li {
 }
 
 .home-nav {
-  padding: 0;
+  padding: 34px;
   margin: 0px 5px;
   transition: 2s ease;
 }
@@ -243,7 +243,6 @@ li {
 }
 
 #navbar a:hover {
-  background-color: ;
   color:var(--main_color) !important;
 }
 
