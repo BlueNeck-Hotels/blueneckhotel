@@ -1,0 +1,52 @@
+.horzontal-padding{
+    padding-inline: 20px;
+}
+
+.back-arrow{
+    font-size: 32px;
+    padding: 18px 0;
+}
+
+.slef-checking .logo-img {
+    max-width: 100px;
+    padding-top: 20px;
+}
+
+.slef-checking .checking-img , .reservation .checking-img{
+    width: 80%;
+    display:block;
+    margin: auto;
+    padding-top: 65px;
+}
+
+.slef-checking .slef-booking , .reservation .slef-booking{
+    margin-top: 20px;
+    display: block;
+    background-color: var(--main_color);
+    text-align: center;
+    border-radius: 18px; 
+    padding: 13px 0;
+    color: #fff !important;
+}
+ 
+.slef-checking  .main-heading-color{
+    padding-block:20px;
+}
+
+
+
+/* ---regervation--- */
+/* .reservation{
+    padding: 50px 0;
+} */
+
+.reservation .reservation-input{
+    padding: 10px 19px;
+    border-radius: 18px; 
+    border:2px solid var(--main_color);
+    margin-top: 25px;
+}
+
+.reservation .light-color{
+    color: var(--paragrap-light-color);
+}

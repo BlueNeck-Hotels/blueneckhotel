@@ -1,0 +1,13 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Redirect requests to PHP files if they don't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# Redirect old URLs to new URLs
+Redirect 301 /index https://demo.blueneckhotel.in
+AddType application/javascript .js
+# Redirect 301 /unitech-cyberpark-sector40 https://demo.blueneckhotel.in/hotel-in-gurugram/unitech-cyberpark-sector40
+# Redirect 301 /subhash-chowk-sector47 https://demo.blueneckhotel.in/hotel-in-gurugram/subhash-chowk-sector47
+# Redirect 301 /subhash-chowk-sector47 https://demo.blueneckhotel.in/hotel-in-gurugram/subhash-chowk-sector47

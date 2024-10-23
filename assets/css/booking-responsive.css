@@ -1,0 +1,596 @@
+@media (max-width: 1600px) {
+    .vertical {
+        left: 65px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .form-width {
+        width: 70%;
+    }
+
+    .innear-padding {
+        width: 30%;
+    }
+
+    .nav-item .nav-link {
+        padding: 4px 11px !important;
+    font-size: 1.1875rem !important;
+
+    }
+
+    .room-rate {
+        padding: 0px 99px 13px 0px !important;
+    }
+
+    .rooms {
+        padding: 19px 147px 13px 12px !important;
+    }
+
+    :root{
+        --font_size_30:1.5625rem;
+        --font_size_23:1.4375rem;
+        --font_size_20:1.125rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .form-width {
+        width: 65%;
+    }
+
+    .innear-padding {
+        width: 35%;
+    }
+
+    .text-color {
+        font-size: 1.25rem;
+    }
+
+    .nav-item .nav-link {
+        padding: 4px 8px !important;
+        font-size: 1rem !important;
+
+    }
+
+    .crose {
+        width: 34px;
+        height: 31px;
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    .nav-item .nav-link {
+        padding: 4px 6px !important;
+        font-size: 15px !important;
+    }
+
+    .room-rate {
+        padding: 0px 0px 13px 0px !important;
+    }
+
+    .rooms {
+        padding: 18px 92px 13px 12px !important;
+    }
+
+    .Premium-With{
+        width: 50%;
+    }
+
+    #form1 {
+        position: relative;
+        width: 90%;
+        transition: 1s;
+        transform: translate(46px, 97px);
+    }
+    :root{
+        --font_size_23: 20px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .above-color {
+        font-size: 14px;
+    }
+
+    .form-width {
+        width: 100%;
+    }
+
+    .innear-padding {
+        width: 100%;
+    }
+
+    .number-rapper {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 35px;
+    }
+
+    .number {
+        flex-direction: column;
+        padding-left: 0;
+        width: 141px;
+    }
+
+    .vertical {
+        border-top: 2px solid #A1A5A4;
+        /* Horizontal line */
+        position: absolute;
+        left: 128%;
+        /* Position it after the content */
+        margin-left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Center vertically */
+        transition: 1s all ease-in-out;
+        width: 150px;
+        /* Adjust width */
+        height: 3px;
+    }
+
+    .innear-padding {
+        width: 100%;
+        height: 332px;
+    }
+
+
+    /* .form-width{
+        padding-right: 66px;
+    } */
+
+    #form2{
+        padding-top: 34px;
+      }
+
+      .procced-btn{
+        font-size: 15px;
+      }
+    
+
+    .margin-top{
+        margin-top: 37px;
+    }
+
+    .nav-item .nav-link {
+        padding: 5px 15px !important;
+        font-size: 1.0625rem !important;
+    }
+
+    .room-rate {
+        padding: 0px 109px 13px 0px !important;
+    }
+
+    .Premium-With{
+        width: 65%;
+    }
+
+    #form1 {
+        position: relative;
+        width: 90%;
+        transition: 1s;
+        transform: translate(37px, 43px);
+    }
+
+    .form-inner-padding {
+        padding: 8px 33px;
+    }
+
+    .scrolled {
+        position: sticky !important;
+        top: 0;
+        margin: 0 !important;
+        z-index: 999;
+      }
+      
+}
+
+@media (max-width: 768px) {
+    .vertical {
+        width: 120px;
+        left: 95%;
+        margin-left: -23px;
+    }
+
+    .innear-padding img {
+        max-width: 13%;
+        margin-left: 22px;
+        padding-top: 22px;
+    }
+
+    .number-color {
+        font-size: 1.1875rem;
+        width: 43px;
+        height: 43px;
+    }
+
+    /* .said-padding {
+        padding-inline: 10px !important;
+    } */
+
+    .self-check-in-images {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        margin-bottom: 0px;
+    }
+
+    .price-for-desktop{
+        display: none;
+    }
+
+    .price-for-mobile{
+        display: inherit;
+    }
+
+    .booking-card{
+        background-color: #F5F5F5;
+        border-radius: 10px;
+        margin-left: 3px;
+    }
+
+   :root{
+    --font_size_25: 1.25rem !important;
+    --font_size_23: 1.5625rem !important;
+
+   }
+
+   .form2-hr-line{
+    display: none;
+   }
+
+
+   .price-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: end !important;
+  }
+
+  .booking-card {
+    margin-bottom: 40px !important;
+    padding-block: 19px !important;
+}
+
+.night{
+    color: #999999;
+}
+
+/* .proceed-button{
+    padding: 0;
+} */
+
+#form3{
+    width: 100%;
+  }
+
+  .layout--tabs{
+    width: 82%;
+    margin: 0;
+  }
+
+  .nav-item .nav-link {
+    padding: 5px 7px !important;
+    font-size: 1rem !important;
+}
+
+    .Premium-With {
+        width: 48%;
+    }
+
+.nav-tabs-wrapper {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping */
+    -ms-overflow-style: none;  /* Hides scrollbar on Internet Explorer */
+    scrollbar-width: none;  /* Hides scrollbar on Firefox */
+  }
+  
+  .nav-tabs-wrapper::-webkit-scrollbar {
+    display: none; /* Hides scrollbar on WebKit browsers (Chrome, Safari, etc.) */
+  }
+  
+  .nav {
+    display: flex; 
+    flex-wrap: nowrap; 
+  }
+  
+  .nav-item {
+    margin-right: 10px; 
+  }
+  
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  .Premium-With {
+    width: 48%;
+}
+
+.formone-hr {
+    width: 94%;
+}
+  
+#form2{
+    /* transform: translate(17px, 35px); */
+    padding: 0 !important;
+}
+}
+
+@media (max-width: 576px) {
+
+    .number-rapper {
+        padding-right: 0px;
+    }
+
+    .vertical {
+        width: 97px;
+        margin-left: 9px;
+        top: 44%;
+    }
+
+    .innear-padding img {
+        max-width: 23%;
+        margin-left: 22px;
+        padding-top: 22px;
+    }
+
+
+    .text-color {
+        font-size: 15px;
+    }
+
+    .number {
+        width: 105px;
+        padding-top: 34px;
+    }
+
+    .innear-padding {
+        height: 274px;
+        margin: 10px 0px;
+    }
+
+    .input-size input {
+        padding: 10px 0;
+    }
+
+    #form1 {
+        width: 100%;
+        overflow: hidden;
+        transform: translate(7px, 35px);
+    }
+
+    #form2{
+        padding-top: 11px;
+        /* transform: translate(0px, 35px); */
+    }
+
+
+
+    .booking-card {
+        margin-bottom: 40px !important;
+        padding-block: 19px !important;
+    }
+
+    .label-size{
+        font-size: 13px !important;
+    }
+
+    .room-rate {
+        flex-direction: column;
+        margin: 0 !important;
+        padding: 0px 16px 13px 0px !important;
+    }
+
+    .desktop-price{
+        display: none;
+    }
+
+    .mobile-price{
+        display: inherit;
+        margin-bottom: 16px !important;
+      }
+
+      .room-only{
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+      }
+
+      .booking-button{
+        width: 90%;
+      }
+
+      .room-crose {
+        position: sticky;
+        top: 0; /* Adjust the top value according to your needs */
+        z-index: 99; /* Ensure it stays on top of other elements */
+        background-color: white; /* Optional: Add background color to avoid content overlap */
+        padding: 10px 0; /* Optional: Add padding for better appearance */
+      }
+
+      .date-container {
+        background-color: white; /* Optional: Add background color to avoid content overlap */
+        padding: 10px 0; /* Optional: Add padding for better appearance */
+      }
+      
+      .crose {
+        cursor: pointer; /* Add a pointer cursor for the close button */
+      }
+
+      .Premium-With {
+        width: 39%;
+    }
+
+    .crose {
+        width: 33px;
+        height: 33px;
+        font-size: 15px;
+        margin-right: 11px;
+    }
+
+    .rooms {
+        padding:0 !important;
+    }
+
+    /* .form-width {
+        padding-right: 29px;
+    } */
+
+
+    .check-box {
+        font-size: 30px;
+        position: absolute;
+        top: 34px;
+        left: 31px;
+        background: var(--main_color);
+        border-radius: 50px;
+        height: 48px;
+        width: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        display: none;
+    }
+
+    .form-inner-padding {
+        padding: 8px 11px 0 16px;
+    }
+
+    .terms-conditions p{
+        font-size: 14px;
+      }
+
+      .terms-conditions input[type="checkbox"] {
+        width: 23px;
+        height: 21px;
+    }
+
+    .rate-book {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 16px;
+}
+    
+
+    :root{
+        --font_size_30:1.25rem;
+    } 
+}
+
+/* Responsive for extra small devices (480px and below) */
+@media (max-width: 480px) {
+    .vertical {
+        width: 80px;
+        /* Adjust width */
+        left: 85%;
+        /* Adjust position */
+        margin-left: 6px;
+    }
+
+        /* .innear-padding {
+            height: 240px;
+        } */
+
+        #form1 {
+            width: 100%;
+            transform: translate(5px, 35px);
+        }
+
+        .crose {
+            width: 31px;
+            height: 28px;
+            font-size: 15px;
+        }
+
+        .innear-padding {
+            height: 240px;
+            margin: 9px -2px;
+        }
+
+        input[type="checkbox"] {
+            width: 30px !important;
+            height: 22px;
+        }
+        
+
+}
+
+@media (max-width: 420px){
+    .vertical {
+        width: 62px;
+    }
+
+    .crose {
+        width: 35px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .form-width {
+        padding-right: 18px;
+    }
+}
+
+
+/* Responsive for very small devices (376px and below) */
+@media (max-width: 376px) {
+    .vertical {
+        width: 60px;
+        /* Adjust width */
+        left: 80%;
+        /* Adjust position */
+        margin-left: -5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .vertical {
+        width: 62px;
+        left: 103%;
+        margin-left: -5px;
+        top: 56px;
+    }
+
+    input[type="checkbox"] {
+        width: 36px !important;
+        height: 22px;
+    }
+
+    .number {
+        width: 66px;
+    }
+
+    .premium {
+        padding-left: 16px;
+    }
+
+    .crose {
+        width: 35px;
+        height: 25px;
+    }
+
+    .check-box {
+        font-size: 27px;
+        position: absolute;
+        top: 31px;
+        left: 10px;
+        border-radius: 50px;
+        height: 46px;
+        width: 46px;
+        color: white;
+    }
+
+    .innear-padding {
+        height: 221px;
+        margin: 9px -2px;
+    }
+
+    .number{
+        padding-top: 31px;
+    }
+    :root{
+        --font_size_30:1.125rem;
+    }
+}
+

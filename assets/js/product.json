@@ -1,0 +1,98 @@
+[
+  {
+    "image": "./assets/img/blueneck-hotel-image.jpg",
+    "roomName": "Deluxe Room",
+    "originalPrice": "250",
+    "taxes": "*Taxes applicable",
+    "pricePerNight": 200,
+    "buttonText": "View Details",
+    "roomonly": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfast": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunch": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunchdinner": {
+      "foodprice": 100,
+      "discountprice": 1000
+    }
+  },
+  {
+    "image": "./assets/img/blueneck-hotel-image.jpg",
+    "roomName": "Deluxe ",
+    "originalPrice": 300,
+    "taxes": "*Taxes applicable",
+    "pricePerNight": 300,
+    "buttonText": "View Details",
+    "roomonly": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfast": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunch": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunchdinner": {
+      "foodprice": 100,
+      "discountprice": 1000
+    }
+  },
+  {
+    "image": "./assets/img/blueneck-hotel-image.jpg",
+    "roomName": "Deluxe ",
+    "originalPrice": 300,
+    "taxes": "*Taxes applicable",
+    "pricePerNight": 300,
+    "buttonText": "View Details",
+    "roomonly": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfast": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunch": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunchdinner": {
+      "foodprice": 100,
+      "discountprice": 1000
+    }
+  },
+  {
+    "image": "./assets/img/blueneck-hotel-image.jpg",
+    "roomName": "Deluxe ",
+    "originalPrice": 300,
+    "taxes": "*Taxes applicable",
+    "pricePerNight": 300,
+    "buttonText": "View Details",
+    "roomonly": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfast": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunch": {
+      "foodprice": 100,
+      "discountprice": 1000
+    },
+    "brekfastandlunchdinner": {
+      "foodprice": 100,
+      "discountprice": 1000
+    }
+  }
+]

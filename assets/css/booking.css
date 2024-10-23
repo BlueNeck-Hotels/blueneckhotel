@@ -1,0 +1,595 @@
+.innear-padding {
+    background-color: var(--light_color);
+    height: 100vh;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  
+  .innear-padding img {
+    max-width: 100%;
+    display: block;
+    margin-left:54px ;
+    padding-top: 40px;
+  }
+  
+  .number {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    padding-left: 39px;
+  }
+  
+  
+  .number-color {
+    width: 50px;
+    height: 50px;
+    background-color: #dce6e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    opacity: 0.5;
+  }
+  
+  .vertical {
+    border: 2px solid #A1A5A4;
+    height: 57px;
+    position: absolute;
+    transition: 1s all ease-in-out;
+    left: -63%;
+    margin-left: -3px;
+    top: 117px;
+  }
+  
+  .formone-hr{
+    display: block;
+    margin: auto;
+    width: 97%;
+  }
+  
+  
+  .vertical-two {
+    border-left: 3px solid #A1A5A4;
+    height: 92px;
+    position: absolute;
+    transition: 0.9s all ease-in-out;
+    left: 5%;
+    margin-left: -3px;
+    top: 170px;
+  }
+  
+  .text-color {
+    color:#A1A5A4;
+    font-weight: 600;
+  }
+  
+  .check-border {
+    display: flex;
+    border: 1px solid #79747e;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+  
+  .check-border input {
+    border: none;
+  }
+  
+  .input-size input {
+    padding: 14px 0;
+  }
+  
+  .input-size select {
+    padding: 14px 8px;
+    border: 1px solid #79747e;
+  }
+  
+  .night-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #79747e;
+    padding: 14px 0;
+    border-radius: 5px;
+  }
+  
+  .input-size label{
+      padding: 16px 0;
+      font-weight: 600;
+  }
+  
+  .above-color{
+      opacity: 0.5;
+  }
+  
+  .procced-btn{
+      width: 100%;
+      padding: 10px 0;
+      font-size: 18px;
+      border: 1px solid var(--main_color);
+      background-color: var(--main_color);
+      text-transform: capitalize;
+      color: white;
+      border-radius: 5px;
+  }
+  
+  .carsour-pointer{
+    cursor: pointer;
+  }
+  
+  .self-check-in-images {
+    width: 75%;
+    aspect-ratio: 3 / 2;
+    margin-bottom: 0px;
+    border-radius: 15px;
+  }
+  
+  .taxes{
+    font-size: 10px;
+  }
+  
+  #form2{
+    padding: 3px 40px;
+    display: none;
+  }
+  
+  #form3{
+    display: none;
+    width: 91%;
+  }
+  
+  #form4{
+    display: none;
+  }
+  
+  #form5{
+    display: none;
+  }
+  
+  #form1 {
+    position:relative;
+    width: 90%;
+    transition: 1s;
+    transform: translate(62px, 97px);
+  }
+  
+  /* .number-color::after{
+    content: "✅";
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  } */
+  
+  
+  .check-box {
+    font-size: 32px;
+    position: absolute;
+    top: 59px;
+    left: 41px;
+    background:var(--main_color);
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: none;
+  }
+  
+  #vertical-Color{
+    border-color: var(--main_color);
+  }
+  
+  .crose{
+    background-color: #ddd;
+    width: 44px;
+    height: 43px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 27px;
+    color: var(--main_color);
+    cursor: pointer
+    ;}
+  
+    .premium{
+      color: var(--main_color);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      padding-left: 27px;
+    }
+  
+    
+  .tab-content {
+    padding: 0;
+  }
+  
+  .card {
+    border-radius: 0 0 .25rem .25rem;
+    border-top: 0;
+  }
+  
+  .nav-tabs {
+    height: 42px;
+    padding: 0;
+    position: relative;
+  
+    .nav-item {
+      margin-left: 0;
+   
+      a {
+        color: black;
+        display: block;
+        padding: 8px 25px;
+      }
+  
+  
+      &.overflow-tab {
+        background-color: white;
+        display: none;
+        position: absolute;
+        right: 0;
+        width: 150px;
+        z-index: 1;
+  
+        a {
+          border: 1px solid lightgray;
+          border-radius: 0;
+          padding: 6px 10px;
+  
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            background-color: lightgray;
+          }
+        }
+    
+        &:last-child {
+          border-radius: 0 0 0 4px;
+        }
+  
+      }
+  
+      &.overflow-tab-action {
+        position: absolute;
+        right: 0;
+      }
+    }
+  
+  }
+  
+  /* #block-simple-text-1 {
+    display: ;
+  } */
+  
+   #block-simple-text-2, #block-simple-text-3, #block-simple-text-4{
+    display: none;
+  }
+  /* .nav-tabs .nav-link:focus, .nav .nav-link:hover {
+    border-color:white !important;
+    border-bottom-color:var(--main_color) !important;
+  } */
+  /* 
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:: {
+    border-bottom-color:var(--main_color) !important;
+  } */
+  
+  
+  hr {
+    border: none;
+    height: 2px;
+    color: #333;  
+    background-color: #333;  
+  }
+  
+  
+  .room-rate{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rate-book{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  del{
+    font-size: 16px;
+  }
+  
+  .room-rate{
+      padding: 0px 153px 13px 0px !important;
+  }
+  
+  .nav-item .nav-link :first-child{
+    padding: 12px 0 !important;
+  }
+  
+  .booking-button{
+    padding: 5px 27px;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    color: white;
+    border-color: 1px solid var(--main_color);
+  }
+  
+  .room-only{
+    display: flex;
+  }
+  
+  .room-only-child{
+    color: #666C89;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .discound-coppen{
+    background-color: var(--light_color);
+    padding: 7px 36px;
+    color: var(--main_color);
+    border-radius: 5px;
+    width: 121px;
+    margin: 0;
+  }
+  
+  
+  .inclusion li {
+    padding: 13px 0;
+  }
+  
+  .booking-card{
+    width: 99%;
+  }
+  
+  .inclusion li span {
+    padding-left: 10px;
+  }
+  
+  .rooms {
+    padding: 19px 296px 13px 0px !important;
+  }
+  
+  .rooms img {
+    width: 95%;
+    border-radius: 10px;
+    aspect-ratio: 2 / 1.2;
+  }
+  #cars{
+    padding: 4px 3px !important;
+    border-radius: 5px;
+  }
+  
+  .terms-and-condition li::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url("../icon/arrow.svg"); /* Specify the image URL */
+    background-size: cover; /* Adjust the size of the background image */
+    margin-right: 10px; /* Optional: Add spacing between the image and the list item text */
+    vertical-align: middle; /* Aligns the image with the text */
+    padding: 11px 10px;
+  }
+  
+  
+  .terms-and-condition li{
+    display: flex;
+    padding: 10px 0;
+    color : #768193;
+  }
+  
+  #datepickerIconSecond , #datepickerIcon{
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .payment-color{
+    color : #768193;
+  }
+  
+  .nav-border{
+    border-bottom: 2px solid #DBDBDB;
+  }
+  
+  
+  /* Color for the active (clicked) tab */
+  .nav-link.active {
+    color: var(--main_color) !important;
+    border-bottom: 2px solid var(--main_color) !important;
+  }
+  
+  /* .nav-link:first-child {
+    color: var(--main_color) !important;
+    border-bottom: 2px solid var(--main_color);
+  } */
+  
+  .form2-hr-line{
+    width: 97%;
+    display: block;
+    margin-inline: auto;
+  }
+  
+  .cursor-poiter{
+    cursor: pointer !important;
+  }
+  
+  .price-for-mobile{
+    display: none;
+  }
+  
+  .date-child{
+    padding-right: 11px;
+  }
+  
+  .mobile-price{
+    display: none;
+  }
+  
+  .form-inner-padding {
+    padding: 8px 50px;
+}
+  
+  .terms-conditions p{
+    color: #768193;
+  }
+  
+   .terms-conditions input[type="checkbox"] {
+    accent-color: var(--main_color);
+  }
+  
+  .terms-conditions input[type="checkbox"] {
+    appearance: none;
+    width: 26px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid var(--main_color);
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-top: 5px;
+  }
+  
+  .terms-conditions input[type="checkbox"]:checked {
+    background-color: var(--main_color);
+    border-color: var(--main_color);
+  } 
+  
+  .terms-conditions input[type="checkbox"]:checked::after {
+    content: '✔'; /* You can use any Unicode character here */
+    color: white; /* This changes the checkmark color */
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+  }
+  
+  .summary-check{
+    display: flex;
+    align-items: center;
+  }
+  
+  .booking-summary{
+    padding: 40px 42px;
+    background-color: #F6F6F6;
+    border-radius: 14px;
+    margin-top: 33px;
+  }
+  
+  .apply{
+    background-color: var(--main_color);
+    border-radius: 10px;
+    margin-left: 5px ;
+  }
+  
+  #phone{
+    padding-left: 70px !important; 
+  }
+  
+  .guest-details-height{
+    height: 24px;
+  }
+  
+  .iti--separate-dial-code .iti__selected-flag{
+    background-color: transparent !important;
+  }
+  
+  
+  
+   
+  
+  /* Summary Check */
+  .summary-check input[type="checkbox"] {
+    appearance: none;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    background-color: #fff;
+    border: 2px solid var(--main_color); /* Use your main color */
+    border-radius: 50%; /* Make it circular for radio button appearance */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px; /* Space between checkbox and label */
+  }
+  
+  .summary-check input[type="checkbox"]:checked {
+    border-color: var(--main_color); /* Border also changes to main color */
+  }
+  
+  .summary-check input[type="checkbox"]:checked::after {
+    content: ''; /* Remove checkmark or any symbol */
+    position: absolute;
+    width: 13px; /* Adjust size of inner circle */
+    height: 13px; /* Adjust size of inner circle */
+    background-color: var(--main_color); /* Inner circle color */
+    border-radius: 50%; /* Inner circle should also be round */
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%); /* Center the inner circle */
+  }
+  
+  .mini-line{
+    height: 1px ;
+  }
+  
+  .modal-body {
+    padding: var(--bs-modal-padding);
+    padding-bottom: 9px;
+    line-height: 26px;
+  }
+  
+  .form-validation{
+    font-size: 12px;
+    display: block;
+    visibility: hidden;
+  }
+  
+  .input-validation:invalid{
+    border: 1px solid var(--invalid) !important; 
+  }
+  
+  .input-validation:valid:focus {
+    border: 1px solid var(--valid) !important;
+  }
+  
+  .booking-verification{
+    width: 50%;
+  }
+  
+  .gohome{
+    padding: 9px 41px  ;
+    border-radius: 5px;
+    color: var(--main_color) !important;
+    border: 1px solid var(--main_color);
+  }
+  
+  .selfcheckin{
+    padding: 9px 41px;
+    color:white !important;
+    border-radius: 5px;
+    background-color: var(--main_color) !important;
+    border: 1px solid var(--main_color);
+  }
+  
+  .bx-check{
+    animation: 4s linear;
+  }
+
+  .form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
