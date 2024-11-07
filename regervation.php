@@ -18,7 +18,7 @@
             <img src="./assets/img/regervation.jpg" alt="" class="img-fulid checking-img">
             <!-- <h1 class="font_size_30 font_weight_700 text-center main-heading-color ">Use your credit card  <br> to pay bills</h1> -->
             <input type="text" id="disabledTextInput" class="form-control reservation-input" placeholder="Reservation ID">
-            <a href="" class="slef-booking" id="#">Self Checkin</a>
+            <a href="./verification.php" class="slef-booking" id="#">Self Checkin</a>
             <p class="text-center py-4 light-color"> Please fill in your Reg. ID above to proceed further.</p>
         </div>
     </div>

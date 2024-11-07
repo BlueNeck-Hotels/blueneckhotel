@@ -323,3 +323,17 @@ function validateEmail(email) {
 }
 // =======getdatevalue=================
 const getDateValue = document.getElementById('datepickerOne');
+
+
+// function neha(){
+
+// }
+ 
+
+// function printTableOfTwo() {
+//     for (let i = 1; i <= 10; i++) {
+//         console.log(`2 x ${i} = ${2 * i}`);
+//     }
+// }
+
+// printTableOfTwo();
