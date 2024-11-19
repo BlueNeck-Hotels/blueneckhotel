@@ -47,7 +47,9 @@ session_start();
                       <p>Address : <span class=""><?php echo $_SESSION['client_data']['address']['house']?> </span>,<span class=""><?php echo $_SESSION['client_data']['address']['state']?> </span> ,<span class=""><?php echo $_SESSION['client_data']['address']['street']?> </span>,<span class=""><?php echo $_SESSION['client_data']['zip']?> </span></p>
             </div>
            </div>
-            <a href="#" class="slef-booking" id="conform">CONFORM</a>
+           <div class="pb-4 px-0">
+           <a href="#" class="slef-booking" id="conform">CONFORM</a>
+           </div>
         </div>
     </div>
   </section>
