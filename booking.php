@@ -485,8 +485,8 @@
                     </div>
                   </div>
                   <label class="mobile-number" for="phone">Mobile Number <span class="verfiy">*</span> </label>
-                  <div class="col-3 m-0  ">
-                    <input type="email" class="form-control " id="phone">
+                  <div class="col-3 m-0">
+                    <input type="email" class="form-control" id="phone">
                   </div>
                   <div class="col-9 m-0 ">
                     <input type="tel" class="form-control ms-1" id="NumberValidata" placeholder="Enter Mobile Number">
@@ -599,9 +599,7 @@
                 </div>
               </div>
             </div>
-
           </form>
-
           <form action="" id="form5">
             <div class="container mt-5">
               <div class="text-center">
@@ -642,8 +640,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="sweetalert2.min.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="build/js/intlTelInput.js"></script>
-  <script src="./assets/js/main.js"></script>
+    <script src="build/js/intlTelInput.js"></script>
   <script>
     var phone = document.getElementById('phone');
 

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,41 +13,41 @@
     <link rel="stylesheet" href="./assets/css/checking.css"/>
   </head>
   <body>
-  <section class="horzontal-padding">
+  <section class="horzontal-padding animation" >
     <a href="./slef-checking.php"><i class='bx bx-chevron-left back-arrow'></i>
     </a>
+    <div class="loader-thank" id="animation-show">
+    <img src="./assets/img/loader-thank.gif" alt="loader-thank.gif">
+    </div>
     <div class="container reservation">
         <div class="row">
-            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-5 ">Dhruv Gupta</h1>
+            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-3 ">Dhruv Gupta</h1>
            <div class="  user-details-outer">
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Name</p>
-                <p>pankaj</p>
+                <p><?php echo $_SESSION['client_data']['full_name'] ?></p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
-                <p>Phone Number</p>
-                <p>9997XXXXXX</p>
+                <p>state</p>
+                <p> <?php echo $_SESSION['client_data']['address']['state'] ?> </p>
             </div>
-           <div class="d-flex justify-content-between user-details-coloum ">
+           <!-- <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Email</p>
-                <p>Dhruv@gmail.com</p>
-            </div>
+                <p><?php echo $_SESSION['client_data']['NA'] ?> </p> 
+            </div> -->
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Date of Birth</p>
-                <p>12.01.2001</p>
+                <p><?php echo $_SESSION['client_data']['dob'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Gender</p>
-                <p>Male</p>
+                <p><?php echo $_SESSION['client_data']['gender'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
-                <p>Address : <span class="">lorem ipsum dolor
-sit amet,consectetur
-adipiscing elit, sed do amet</span></p>
-              
+                      <p>Address : <span class=""><?php echo $_SESSION['client_data']['address']['house']?> </span>,<span class=""><?php echo $_SESSION['client_data']['address']['state']?> </span> ,<span class=""><?php echo $_SESSION['client_data']['address']['street']?> </span>,<span class=""><?php echo $_SESSION['client_data']['zip']?> </span></p>
             </div>
            </div>
-            <a href="./roomavailable.php" class="slef-booking" id="#">Self Checkin</a>
+            <a href="#" class="slef-booking" id="conform">CONFORM</a>
         </div>
     </div>
   </section>
@@ -52,6 +55,20 @@ adipiscing elit, sed do amet</span></p>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-    <!-- <dotlottie-player src="https://lottie.host/857b72c2-e826-4789-a9cf-a553dc777030/YvgHJ6apt4.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
-</body>
+<script>
+    const conformanimation = document.getElementById('conform');
+    const animationShow = document.getElementById('animation-show');
+    conformanimation.addEventListener('click', ()=>{
+        animationShow .style.display="unset"
+        setTimeout(()=>{
+            window.location.href = './thankyou.php';
+        }, 3000);
+    }) 
+</script>
+
+ <?php
+// echo "<pre/>";
+// print_r($_SESSION['client_data']);
+ ?>
+ </body>
 </html>

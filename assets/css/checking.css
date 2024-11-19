@@ -19,14 +19,25 @@
     padding-top: 65px;
 }
 
-.slef-checking .slef-booking , .reservation .slef-booking , .slef_button .slef-booking {
+
+
+.slef-checking .slef-booking , .reservation .slef-booking , .slef_button .slef-booking , .otp-verification .slef-booking , .numverification .slef-booking {
     margin-top: 20px;
     display: block;
     background-color: var(--main_color);
     text-align: center;
     border-radius: 24px; 
-    padding: 13px 0;
+    padding: 14px 0; 
     color: #fff !important;
+    border: 1px solid var(--main_color);
+}
+
+.otp-verification .slef-booking.loader-button{
+  padding: 7px 0 !important;
+}
+
+.otp-verification .slef-booking , .numverification .slef-booking  {
+  width: 100%;
 }
  
 .slef-checking  .main-heading-color{
@@ -162,7 +173,7 @@
   background: none;
   border: none;
   margin-top: 30px;
-  text-align: CE;
+  text-align: center;
 }
 
 /* Center the prev arrow on the left */
@@ -195,6 +206,101 @@ width: 78px;
 .slef_button{
   position: relative;
   bottom: -110px;
+}
+
+
+
+.otp-verification , .numverification{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+  padding: 22px 21px;
+  border-radius: 12px;
+}
+
+  .numverification{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+#verifcationotp {
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  
+}
+
+.loader-button  span{
+ margin-right: 7px;
+}
+
+
+.self-thank-you{
+  display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-thank-you .selfcheckin{
+    width: 100%;
+    border-radius: 5rem;
+} 
+
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animation {
+  animation: slide-in 500ms;
+  animation-iteration-count: 1;
+}
+
+
+.loader-thank{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  background: #ffffffba;
+  display: none;
+}
+
+.loader-thank img{
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 999;
 }
 
 

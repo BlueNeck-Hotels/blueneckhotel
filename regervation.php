@@ -10,20 +10,76 @@
     <link rel="stylesheet" href="./assets/css/checking.css"/>
   </head>
   <body>
-  <section class="horzontal-padding">
-    <a href="./slef-checking.php"><i class='bx bx-chevron-left back-arrow'></i>
-    </a>
-    <div class="container reservation">
+    <section class="horzontal-padding animation">
+      <a href="./slef-checking.php">
+        <i class='bx bx-chevron-left back-arrow'></i>
+      </a>
+      <div class="container reservation">
         <div class="row">
-            <img src="./assets/img/regervation.jpg" alt="" class="img-fulid checking-img">
-            <!-- <h1 class="font_size_30 font_weight_700 text-center main-heading-color ">Use your credit card  <br> to pay bills</h1> -->
-            <input type="text" id="disabledTextInput" class="form-control reservation-input" placeholder="Reservation ID">
-            <a href="./verification.php" class="slef-booking" id="#">Self Checkin</a>
-            <p class="text-center py-4 light-color"> Please fill in your Reg. ID above to proceed further.</p>
+          <img src="./assets/img/regervation.jpg" alt="" class="img-fulid checking-img">
+          <input type="text" oninput="this.value = this.value.toUpperCase()" id="resVal" class="form-control reservation-input" placeholder="Reservation ID">
+          <a href="#" class="slef-booking" id="resbutton">Self Checkin</a>
+          <p class="text-center py-4 light-color">Please fill in your Reg. ID above to proceed further.</p>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    let resVal = document.getElementById("resVal");
+let resbutton = document.getElementById("resbutton");
+
+resbutton.addEventListener('click', function () {
+  // Check if the input is empty
+  if (resVal.value === '') {
+    Swal.fire({
+      title: 'Error!',
+      text: 'Please enter a valid Reservation ID.',
+      icon: 'error',
+      confirmButtonText: 'OK'
+    });
+  } 
+  else if (resVal.value.length < 12  || resVal.value.length > 12 ) { // Check if the length exceeds 4 characters
+    Swal.fire({
+      title: 'Error!',
+      text: 'Reservation ID should not exceed 4 characters.',
+      icon: 'error',
+      confirmButtonText: 'OK'
+    });
+    
+    resVal.value = ''; // Clear the input field
+    resVal.focus(); // Set focus back to the input field
+  } 
+
+  else if ((/[a-zA-Z]/.test(resVal) && resVal.length < 5) || (/\d/.test(resVal) && Number(resVal) < 7)) {
+    Swal.fire({
+      title: 'Error!',
+      text: 'Input contains invalid letters or numbers less than 7.',
+      icon: 'error',
+      confirmButtonText: 'OK'
+    });
+    resVal.value = ''; // Clear the input field
+    resVal.focus(); // Set focus back to the input field
+  } 
+
+  else {
+    // Perform self-checking action here
+    // window.location.href = "./verification.php";
+    Swal.fire({
+      title: 'DONE',
+      text: 'success Reservation ID is Conform',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+    resVal.value = ''; // Clear the input field
+    resVal.focus(); // Set focus back to the input field
+    setTimeout(() => {
+          window.location.href = "enteraddharnum.php";
+
+    }, 2000);
+  }
+});
+
+    </script>
+  </body>
 </html>
