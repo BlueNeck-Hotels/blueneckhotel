@@ -21,11 +21,11 @@ session_start();
     </div>
     <div class="container reservation">
         <div class="row">
-            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-3 ">Dhruv Gupta</h1>
+            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-3 "> <?php echo $_SESSION['client_data']['full_name'] ?> </h1>
            <div class="  user-details-outer">
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Name</p>
-                <p><?php echo $_SESSION['client_data']['full_name'] ?></p>
+                <p> <?php echo $_SESSION['client_data']['full_name'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>state</p>

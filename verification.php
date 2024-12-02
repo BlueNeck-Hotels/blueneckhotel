@@ -20,7 +20,7 @@
 
 }
 
-/* @keyframes fadeIn {
+ @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translatey(100px);w
@@ -29,10 +29,10 @@
     opacity: 1;
     transform: translateY(0);
   }
-} */
+} 
 
 /* Heading Styles */
-/* h1 {
+ h1 {
   font-size: 2.5rem;
   color: #00796b;
   text-align: center;
@@ -40,23 +40,23 @@
   position: relative;
 }
 
-/* Section Styling
+ Section Styling
 .section {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #ddd;
   transition: all 0.3s ease;
-} */
+} 
 
-/* .section:hover {
+.section:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-} */
+} 
 
-/* #my-qr-reader {
+ #my-qr-reader {
   padding: 20px;
   border: 2px solid #00796b;
   border-radius: 10px;
-} */
+} 
 
 /* Button Enhancements */
 #start-scan{
@@ -74,7 +74,7 @@
   /* transition: all 0.3s ease; */
 }
 
-/* #start-scan:hover {
+ #start-scan:hover {
   background-color: #004d40;
   transform: translateY(-2px);
 }
@@ -90,10 +90,10 @@
 
 #start-scan:hover i {
   margin-left: 15px;
-} */
+} 
 
 /* QR Result Section */
-/* #result {
+ #result {
   margin-top: 20px;
   font-size: 1.2rem;
   color: #000;
@@ -144,7 +144,7 @@ Loading Feedback
 }
 
 /* Animation for scanning */
-/* .scan-progress {
+ .scan-progress {
   margin-top: 10px;
   border: 2px solid #00796b;
   border-radius: 8px;
@@ -154,7 +154,7 @@ Loading Feedback
   animation: pulse 1.5s infinite;
 }
 
-@keyframes pulse {
+ @keyframes pulse {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -163,10 +163,10 @@ Loading Feedback
     transform: scale(1.05);
     opacity: 0.8;
   } 
-}*/
+}
 
 /* Responsive Styling */
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .container {
     padding: 20px;
   }
@@ -182,7 +182,7 @@ Loading Feedback
   #start-scan{
     width: 97%;
   }
-}  */
+} 
 
 </style>
 </head>
@@ -192,7 +192,6 @@ Loading Feedback
     <h1><i class="fas fa-qrcode"></i> Scan QR Code</h1>
     <div class="section">
       <div id="my-qr-reader">
-
       </div>
       <div id="result">Scanned QR code will appear here.</div>
       <div class="loading"><i class="fas fa-spinner fa-spin"></i> Scanning...</div>
@@ -207,15 +206,14 @@ Loading Feedback
     <div class="verification-button ">
             <h4>ID Verification</h4>
         <p class="text-muted font_size_18 py-2 m-0">lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do</p>
-  <!-- <button id="start-scan">Start Scanning</button> -->
-x`  </div>
+  <button id="start-scan">Start Scanning</button>  </div>
 </div>
 
 
 
-  <!-- <script src="https://unpkg.com/html5-qrcode"></script> -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- <script>
+  <script>
     function domReady(fn) {
   if (
     document.readyState === "complete" ||
@@ -278,5 +276,5 @@ domReady(function () {
 htmlscanner.render(onScanSuccess, onScanFailure);
 
 });
-  </script> -->
+  </script> 
 </body>

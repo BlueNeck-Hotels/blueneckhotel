@@ -40,7 +40,7 @@ if (isset($_GET['verifyotp'])) {
     }
 
     $url = 'https://sandbox.surepass.io/api/v1/aadhaar-v2/submit-otp';
-    $headers = ['Content-Type: application/json', 'Authorization: Bearer ' . $auth_token];
+    $headers = ['Content-Type: application/json', 'Authorization: Bearer ' . $auth_token]; 
     $response = sendCurlRequest($url, ["client_id" => $client_id, "otp" => $otpValue], $headers);
 
     if (isset($response['status_code']) && $response['status_code'] === 200) {
@@ -52,10 +52,53 @@ if (isset($_GET['verifyotp'])) {
         ]);
     } else {
         echo json_encode([
-            'status_code' => $response['status_code'] ?? 500,
-            'message' => $response['message'] ?? "OTP verification failed."
+             'message' => $response['message'] ?? "OTP verification failed."
         ]);
     }
     exit;
 }
-?>
+
+// if (isset($_GET['resendotp'])) {
+//     $client_id = $_POST['client_id'];
+
+//     // Check if client_id is provided
+//     if (empty($client_id)) {
+//         echo json_encode(["status_code" => 400, "message" => "Missing client ID"]);
+//         exit;
+//     }
+
+//     $url = 'https://sandbox.surepass.io/api/v1/aadhaar-v2/generate-otp';
+//     $headers = ['Content-Type: application/json', 'Authorization: Bearer ' . $auth_token];
+//     $response = sendCurlRequest($url, ["client_id" => $client_id, "otp" => $otpValue], $headers);
+
+//     if (isset($response['status_code']) && $response['status_code'] === 200) {
+//         $_SESSION['client_data'] =$response['data'] ;
+//         echo json_encode([
+//             'status_code' => 200,
+//             'message' => 'OTP verified and data stored in session.',
+//             'client_data' => $_SESSION['client_data']
+//         ]);
+//     } else {
+//         echo json_encode([
+//             'status_code' => $response['status_code'] ?? 500,
+//             'message' => $response['message'] ?? "OTP verification failed."
+//         ]);
+//     }
+//     exit;
+// }
+
+// if (isset($_GET['addharqr'])) {
+//     $decodetext = $_POST['decodetext'];
+//     if (empty($decodetext)) {
+//         echo json_encode(["status_code" => 400, "message" => "Missing client addhar"]);
+//         exit;
+//     }
+
+//     $url = 'https://sandbox.surepass.io/api/v1/ocr/aadhaar';
+//     $headers = ['Content-Type: application/json', 'Authorization: Bearer ' . $auth_token];
+//     $response = sendCurlRequest($url, ["id_number" => $decodetext], $headers);
+
+//     echo json_encode($response);
+//     exit;
+// }
+// ?>
