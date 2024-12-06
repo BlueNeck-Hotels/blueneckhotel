@@ -14,7 +14,6 @@ session_start();
   </head>
   <body>
   <section class="horzontal-padding animation" >
-    <div class="container-fulid">
     <a href="./slef-checking.php"><i class='bx bx-chevron-left back-arrow'></i>
     </a>
     <div class="loader-thank" id="animation-show">
@@ -22,37 +21,36 @@ session_start();
     </div>
     <div class="container reservation">
         <div class="row">
-            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-3 "> <?php echo $_SESSION['client_data']['full_name'] ?> </h1>
+            <h1 class="font_size_25 font_weight_600  text-center main-heading-color py-3 "> <?php echo $_SESSION['qrdata']['full_name'] ?> </h1>
            <div class="  user-details-outer">
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Name</p>
-                <p> <?php echo $_SESSION['client_data']['full_name'] ?> </p>
+                <p> <?php echo $_SESSION['qrdata']['full_name'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>state</p>
-                <p> <?php echo $_SESSION['client_data']['address']['state'] ?> </p>
+                <p> <?php echo $_SESSION['qrdata']['address']['state'] ?> </p>
             </div>
            <!-- <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Email</p>
-                <p><?php echo $_SESSION['client_data']['NA'] ?> </p> 
+                <p><?php echo $_SESSION['qrdata']['NA'] ?> </p> 
             </div> -->
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Date of Birth</p>
-                <p><?php echo $_SESSION['client_data']['dob'] ?> </p>
+                <p><?php echo $_SESSION['qrdata']['dob'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
                 <p>Gender</p>
-                <p><?php echo $_SESSION['client_data']['gender'] ?> </p>
+                <p><?php echo $_SESSION['qrdata']['gender'] ?> </p>
             </div>
            <div class="d-flex justify-content-between user-details-coloum ">
-                      <p>Address : <span class=""><?php echo $_SESSION['client_data']['address']['house']?> </span>,<span class=""><?php echo $_SESSION['client_data']['address']['state']?> </span> ,<span class=""><?php echo $_SESSION['client_data']['address']['street']?> </span>,<span class=""><?php echo $_SESSION['client_data']['zip']?> </span></p>
+                      <p>Address : <span class=""><?php echo $_SESSION['qrdata']['address']['house']?> </span>,<span class=""><?php echo $_SESSION['qrdata']['address']['state']?> </span> ,<span class=""><?php echo $_SESSION['qrdata']['address']['street']?> </span>,<span class=""><?php echo $_SESSION['qrdata']['zip']?> </span></p>
             </div>
            </div>
            <div class="pb-4 px-0">
            <a href="#" class="slef-booking" id="conform">CONFORM</a>
            </div>
         </div>
-    </div>
     </div>
   </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -70,9 +68,9 @@ session_start();
     }) 
 </script>
 
- <!-- <?php
-echo "<pre/>"; 
-print_r($_SESSION['client_data']);
- ?> -->
+ <?php
+ echo "<pre/>"; 
+ print_r($_SESSION['qrdata']);
+ ?> 
  </body>
 </html>

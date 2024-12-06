@@ -155,7 +155,7 @@
 
     // Function to handle Resend OTP
     
-      $("#resendOtp").click(function () {
+     $("#resendOtp").click(function () {
     $("#resendOtp").hide();
     $("#countdown").text('');
     startCountdown(1); // Restart 10-minute countdown

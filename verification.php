@@ -177,7 +177,7 @@ Loading Feedback
 
   button {
     font-size: 16px;
-  }
+  }  
 
   #start-scan{
     width: 97%;

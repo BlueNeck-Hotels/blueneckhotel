@@ -15,16 +15,31 @@
             max-width: 400px;
             margin-bottom: 10px;
         }
+
         #result {
             margin-top: 20px;
             font-family: Arial, sans-serif;
         }
+
         .error {
             color: red;
         }
 
+        .adhar-button{
+            padding-top:39px;
+            padding-bottom:39px;
+            border-top: 1px solid var(--main_color);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
         .adhar-button button{
             width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: var(--main_color);
+            color: #fff;
+            border: 1px solid var(--main_color);
         }
 
         .video-section{
@@ -44,35 +59,49 @@
             font-size:14px;
             cursor: pointer;
             border: 1px solid #000
+        }   
+
+        .adhar-button h4, p{
+            text-align: center; 
+            
+        }
+       
+        .heading-scaner{
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-top: 10px
         }
     </style>
 </head>
 <body>
-    <h1>Scan qr code</h1>
-
+  <section>
+    <div class="container-fluid">
+        <div class="row">
+        <h1 class="heading-scaner">Scan qr code</h1>
     <!-- Video element for QR code scanning -->
     <div class="video-section">
     <img src="./assets/img/scanner.gif" alt="" class="scanner-img img-fluid" id=scaner-image>
     <video id="video" autoplay style="display:none;"></video>
     </div>
+
+    <div class="loader-thank" id="animation-show">
+    <img src="./assets/img/loader-thank.gif" alt="loader-thank.gif">
+    </div>
     <!-- Input to upload QR code image -->
-    <h3 class="text-center">Upload QR Code Image</h3>
+    <h3 class="text-center font_size_14">Upload QR Code Image</h3>
+    <label for="qrInput" class="upload-image font_size_14">Click me to upload image</label>
     <input type="file" id="qrInput" style="visibility:hidden; accept="image/*" >
-    <label for="qrInput" class="upload-image">Click me to upload image</label>
-
     <!-- Buttons to start and stop scanning -->
-<div class="adhar-button">
-<button id="startScanButton">Start Scan</button>
-<button id="stopScanButton" style="display: none;">Stop Scan</button>
-</div>  
-
-    <!-- Input field for the JWT or scanned QR code -->
-    <!-- <h3>QR Code Data / JWT</h3>
-    <textarea id="jwtInput" rows="5" style="width: 100%;"></textarea> -->
-    <!-- <button id="decodeButton">Decode JWT</button> -->
-
-    <!-- Result display -->
-    <div id="result"></div>
+     <div class="adhar-button px-2">
+     <h4 class="font_size_18">ID Verification</h4>
+        <p class="text-muted font_size_14 py-2 m-0">lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do</p> 
+    <button id="startScanButton">Start Scan</button>
+    <button id="stopScanButton" style="display:none;">Stop Scan</button>
+   </div> 
+   </div>
+   </div> 
+  </section>
 
     <script>
         // Decode Base64 URL
@@ -111,6 +140,7 @@
         const scanerImage  = document.getElementById('scaner-image');
         let scanning = false;
         let stream = null;
+        let output=null;
 
         // Start Webcam for QR scanning
         async function startScanner() {
@@ -149,15 +179,19 @@
 
                     if (code) {
                         console.log("QR code found:", code.data);
-                        document.getElementById('jwtInput').value = code.data;
-                        console.log("QR code found:", code.data);
-                        resultDiv.innerHTML = '<p>QR code successfully decoded. Click "Decode JWT" to view details.</p>';
+                        // document.getElementById('jwtInput').value = code.data;
+                         output=code.data;
+                         console.log(output)
+                         AjexCalling ()
                         stopScanner();
                     } else {
                         requestAnimationFrame(scanQRCode);
+                        // resultDiv.innerHTML = '<p>not data found</p>';
+                        
                     }
                 } else {
-                    requestAnimationFrame(scanQRCode);
+                    requestAnimationFrame(scanQRCode); 
+                    // resultDiv.innerHTML = '<p>not data found</p>';
                 }
             }
         }
@@ -181,7 +215,7 @@
             const file = event.target.files[0];
 
             if (!file) {
-                resultDiv.innerHTML = '<p class="error">Please upload a valid QR code image.</p>';
+                // resultDiv.innerHTML = '<p class="error">Please upload a valid QR code image.</p>';
                 return;
             }
 
@@ -202,10 +236,14 @@
 
                     if (code) {
                         // document.getElementById('jwtInput').value = code.data;
-                        resultDiv.innerHTML = '<p>QR code successfully decoded. Click "Decode JWT" to view details.</p>';
+                        // resultDiv.innerHTML = '<p>QR code successfully decoded. Click "Decode JWT" to view details.</p>';
+                        output =code.data;
+                        // console.log(output)
+                        AjexCalling ()
                         console.log("QR code found:", code.data);
+
                     } else {
-                        resultDiv.innerHTML = '<p class="error">Failed to decode QR code.</p>';
+                        // resultDiv.innerHTML = '<p class="error">Failed to decode QR code.</p>';
                     }
                 };
             };
@@ -238,10 +276,36 @@
         //     }
         // });
 
+ function AjexCalling() {
+    const animationShow = document.getElementById('animation-show');
+    $.ajax({
+    url: 'aadharqr.php?output',
+    type: 'POST',
+    dataType: 'json',
+    data: { output:output}, // Replace with a valid Aadhaar number
+    success: function(response) {
+        // console.log("Response:", response);
+        animationShow .style.display="unset"
+        setTimeout(function () {
+                window.location.href = 'qruserdetails.php';
+              }, 2000);
+        // alert(response.message || "Success");
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+        console.error("AJAX Error:", textStatus, errorThrown);
+        console.error("Raw Server Response:", jqXHR.responseText);
+    }
+});
+}
+
         // Event Listeners for Start and Stop Buttons
         document.getElementById('startScanButton').addEventListener('click', startScanner);
         document.getElementById('stopScanButton').addEventListener('click', stopScanner);
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

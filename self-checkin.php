@@ -16,7 +16,7 @@
             <div class="col-12">
             <img src="./assets/img/slef-checking.jpg" alt="" class="img-fulid checking-img">
             <h1 class="font_size_30 font_weight_700 text-center main-heading-color ">Use your credit card  <br> to pay bills</h1>
-            <a href="https://www.blueneckhotels.com/booking/" class="slef-booking" id="#">BOOking</a>
+            <a href="https://www.blueneckhotels.com/booking/" class="slef-booking" id="#">Booking</a>
             <a href="./regervation.php" class="slef-booking" id="#">Self Checkin</a>
             </div>
         </div>
