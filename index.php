@@ -1,7 +1,7 @@
 <?php 
   include_once'./header.php';
 ?>
-<!-------------------hero-section---------------->
+<!-------------------hero-section----------------> 
   <section class="bg_banner" id="home">
     <div class="container">
       <div class="row">
@@ -115,6 +115,8 @@
       </div>
     </div>
   </section>
+
+
 
 
   <!----------------HOTEL------------------->
