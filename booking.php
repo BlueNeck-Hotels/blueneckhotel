@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="./assets/css/booking-responsive.css" />
   <link rel="stylesheet" href="./build/css/intlTelInput.css" />
 </head>
-
 <body>
   <section class="">
     <div class="container-fluid">

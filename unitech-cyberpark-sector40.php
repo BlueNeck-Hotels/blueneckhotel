@@ -110,7 +110,7 @@ include_once './header.php';
   <section>
     <div class="container">
       <div class="row">
-        <div class="d-flex flex-wrap align-items-center text-capitalize navigation-bar ">
+        <div class="d-flex align-items-center text-capitalize navigation-bar ">
           <a href="#discription">description</a>
           <a href="#amenities">amenities</a>
           <a href="#photos">photos & videos</a>
@@ -342,7 +342,6 @@ include_once './header.php';
           </div>
         </div>
   </div>
- 
   <?php 
 include_once './footer.php';
 ?>

@@ -86,7 +86,6 @@
             <a href="./privacy.html" class="pe-4 policy me-2 ">Privacy Policy</a>
             <a href="./term-services.html" class="policy">Terms of Service</a>
           </div>
-
           <div class="col-12 col-md-12 col-lg-6 pt-4 pt-md-4 py-lg-0 text-center">
             <p class="copyright-color">Copyright 2025-25 CRS HosTech PVT. LTD. All Right Reserved
             </p>
@@ -124,4 +123,23 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js
   <script>
     // initialization of aos
     AOS.init();
+  </script>
+<script>
+        window.addEventListener('load', () => {
+          registerSW();
+        });
+     
+        // Register the Service Worker
+        async function registerSW() {
+          if ('serviceWorker' in navigator) {
+            try {
+              await navigator
+                    .serviceWorker
+                    .register('serviceworker.js');
+            }
+            catch (e) {
+              console.log('SW registration failed');
+            }
+          }
+        }
   </script>

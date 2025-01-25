@@ -53,6 +53,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css"
     />
+    <link rel="manifest" href="./manifest.json">
   </head>
 
   <body>
@@ -171,8 +172,7 @@
               <img
                 src="./assets/img/Blue nack-big-logo.png"
                 alt=""
-                class="img-fluid"
-              />
+                class="img-fluid"/>
             </div>
           </div>
         </div>

@@ -1,0 +1,22 @@
+{
+  "name":"Blue Neck ",
+  "short_name":"BNH",
+  "start_url":"index.php",
+  "display":"standalone",
+  "background_color":"#FFD603",
+  "theme_color":"#01BCF1",
+  "scope": ".",
+  "description":"This is a PWA tutorial.",
+  "icons":[
+  {
+  "src":"./assets/img/icon-192x192.png",                     
+  "sizes":"192x192",
+  "type":"image/png"
+  },
+  {
+  "src":"./assets/img/second-logo.png", 
+  "sizes":"512x512",
+  "type":"image/png"
+  }
+]
+}

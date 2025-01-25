@@ -11,7 +11,9 @@
   </head>
   <body>
     <section class="horzontal-padding animation">
-      <a href="./slef-checking.php">
+     <div class="container-fluid desktop-size">
+    <div class="row">
+    <a href="./slef-checking.php">
         <i class='bx bx-chevron-left back-arrow'></i>
       </a>
       <div class="container reservation">
@@ -22,12 +24,14 @@
           <p class="text-center py-4 light-color">Please fill in your Reg. ID above to proceed further.</p>
         </div>
       </div>
+    </div>
+     </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
     let resVal = document.getElementById("resVal");
-let resbutton = document.getElementById("resbutton");
+    let resbutton = document.getElementById("resbutton");
 
 resbutton.addEventListener('click', function () {
   // Check if the input is empty

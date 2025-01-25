@@ -136,6 +136,16 @@
   .nav-bar-height {
     height: 87px;
   }
+
+
+  /* ----window-pop */
+
+  .pop-background-color {
+    background-color: #F9EFD8;
+    border-radius: 1rem;
+    width: 86%;
+    height: unset;
+}
 }
 @media (max-width: 1040px) {
   .msin-spin-logo {
@@ -388,6 +398,26 @@ line-height: 36px;
 font-weight: 700;
 padding-top: 30px;
 }
+
+/* window-pop */
+.pop-images img {
+  width: 72%;
+  display: block;
+  margin: auto;
+}
+
+.pop-background-color .click-here {
+  background: white;
+  width: 48%;
+  border-radius: 24px;
+  margin-top: unset; 
+  margin-bottom: 20px; 
+}
+
+
+.pop-background-color .crose-pop {
+  left: 5px;
+  top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -593,7 +623,30 @@ padding-top: 30px;
   display: none;
 }
 
+/* window-pop */
+:root{
+  --font_size_30: 1.4375rem;
 }
+
+.pop-background-color .rammandir-img .fab-logo {
+
+  left: 0;
+  right: -29px;
+  width: 68px ;
+  border-radius: 50%;
+  bottom: 111px;
+  -webkit-animation: spin 10s infinite linear;
+
+}
+
+.pop-background-color .click-here {
+  background: white;
+  width: 68%;
+  border-radius: 24px;
+  margin-top: unset;
+  margin-bottom: 20px;
+}
+ }
 
 @media (max-width: 576px) {
   .mobile-mode-form {
@@ -814,9 +867,42 @@ padding-top: 30px;
     width: 25px;
     margin: 0px 6px;
 } */
+
+/* window-pop */
+
+.pop-background-color .click-here {
+  background: white;
+  width: 252px;
+  padding: 10px;
+  border-radius: 24px;
+  margin-top: unset; 
+}
+
+.pop-background-color .rammandir-img .fab-logo {
+  left: 0;
+  right: -31px;
+  width: 73px;
+  bottom: 98px;
+  -webkit-animation: spin 10s infinite linear;
+}
+
+.booking_bg {
+  background-color: var(--yellow-color);
+  color: white;
+  width: 281px;
+}
+
+.pop-background-color .crose-pop {
+  left: 0;
+  right: 0;
+  width: 45px;
+  font-size: 26px;
+  height: 45px;
+}
 }
 
 @media (max-width: 480px) {
+
   .msin-spin-logo {
     margin-top: 130px !important;
     width: 48% !important;
@@ -885,6 +971,33 @@ padding-top: 30px;
     top: 75%;
     width: 60px;
   }
+
+  /* ----window-web- */
+  .pop-images img {
+    width: 100%;
+    
+}
+
+.pop-background-color .click-here {
+  background: white;
+  width: 252px;
+  padding: 10px;
+  border-radius: 24px;
+  margin-bottom: unset;
+}
+
+.pop-background-color .rammandir-img .fab-logo {
+  left: 0;
+  right: -33px;
+  width: 73px;
+  bottom: 127px;
+  -webkit-animation: spin 10s infinite linear;
+}
+
+.pop-background-color{
+  width: 100%;
+  font-size: 0.875rem;
+}
 }
 
 @media (max-width: 430px) {
@@ -1039,6 +1152,11 @@ padding-top: 30px;
 .about-side-arrow-second img {
   top: 77%;
   width: 60px;
+}
+
+/* ---window-web */
+.booking_bg {
+  width: 265px;
 }
 }
 @media(max-width:320px) {
